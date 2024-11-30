@@ -5,6 +5,7 @@
         } 
        body{
             margin: 0;
+
             background-color: #2C2F48; /*adjusted the background color to match the nav bar*/
         }
         button{
@@ -14,7 +15,6 @@
         }
 
         nav{
-            padding-right: 10px;
             display: flex;
             justify-content: flex-end;
             width: 80%;
@@ -29,7 +29,7 @@
             gap:50px;
             padding: 10px 0 10px 15px;
             border-left: 1px solid rgba(255, 255, 255, 0.4); 
-            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
         }
 
         .search-bar{
@@ -42,19 +42,80 @@
         .search-button {
             display: flex;
             align-items: center;
-            background: linear-gradient(to bottom, #2E335A, #1C1B33); /* Background color */
-            color: white; /* Text color */
+            background: linear-gradient(to bottom, rgba(46. 51, 90,0.3), rgba(28, 27, 51, 0.3)); /* Background color */
+            color: white; 
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-radius: 5px; /* Rounded corners */
             padding: 0 200px; /* Padding for spacing inside the button */
             cursor: pointer;
-            transition: background-color 0.3s ease; /* Smooth color transition */
+            transition: background-color 0.3s ease; 
             width: 100%; /* Make the button stretch across the full width of the parent */
-            max-width: 400px; /* Optionally, limit the width to a max value */
+            max-width: 400px;
             margin-left: 50%;
         }
 
-        .search-input { /* adjusted the position and color   !!!!! we need to make it bigger*/
+        
+        .search-text {
+            margin-left: 8px; /* Adds space between the icon and the text */
+            color: white;
+            font-size: 14px; /* Adjust the font size as needed */
+        }
+
+        .sidebar{
+            display: flex;
+            width: 20%;
+            height: 100vh;
+            
+            justify-content: flex-start;
+            background: linear-gradient(to bottom, #5E4E91, #816E9D);
+            float: left;
+            flex-direction: column;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+
+
+
+        }
+          
+          .sidebar-title {
+            font-weight: bold;
+            margin-top: 18px;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            padding-bottom: 10px;
+          }
+          
+          .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          .menu-item svg{
+            padding-top: 5px;
+
+          }
+
+          .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+          }
+          
+          .menu-item .icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+          }
+          
+          .menu-item:hover {
+            background: rgba(48, 41, 91, 1);
+            border-radius: 5px;
+            padding-left: 10px;
+          }
+
+           .search-input { /* adjusted the position and color   !!!!! we need to make it bigger*/
             flex: 1;
             background-color: transparent;
             border: none;
@@ -67,3 +128,5 @@
             color: gray;
           }
     
+
+     
