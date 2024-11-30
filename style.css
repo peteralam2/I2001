@@ -53,13 +53,17 @@
             max-width: 400px; /* Optionally, limit the width to a max value */
             margin-left: 50%;
         }
-        
-        .search-text {
-            margin-left: 8px; /* Adds space between the icon and the text */
-            color: white;
-            font-size: 14px; /* Adjust the font size as needed */
-        }
-        
 
-       
+        .search-input { /* adjusted the position and color   !!!!! we need to make it bigger*/
+            flex: 1;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+          }
+          
+          .search-input::placeholder {
+            color: gray;
+          }
     
