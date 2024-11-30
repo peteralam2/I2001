@@ -1,0 +1,22 @@
+
+       body{
+            margin: 0;
+            background-color: aqua;
+        }
+
+        nav{
+            display: flex;
+            width: 17%;
+            background-color: #2C2F48;
+            float: right;
+            border-left: 1px solid rgba(255, 255, 255, 1); 
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        .nav-icons{
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            padding: 10px 0 20px 15px;
+        }
+
