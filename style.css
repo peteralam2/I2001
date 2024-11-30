@@ -5,8 +5,8 @@
         } 
        body{
             margin: 0;
-            background-color: #1D203E;
-            color: white;
+
+            background-color: #2C2F48; /*adjusted the background color to match the nav bar*/
         }
         button{
             all: unset;
@@ -53,6 +53,7 @@
             max-width: 400px;
             margin-left: 50%;
         }
+
         
         .search-text {
             margin-left: 8px; /* Adds space between the icon and the text */
@@ -114,4 +115,18 @@
             padding-left: 10px;
           }
 
-        
+           .search-input { /* adjusted the position and color   !!!!! we need to make it bigger*/
+            flex: 1;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+          }
+          
+          .search-input::placeholder {
+            color: gray;
+          }
+    
+
+     
