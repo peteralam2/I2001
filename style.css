@@ -1,22 +1,65 @@
-
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Makes sure padding and border are included in the element's total width/height */
+        } 
        body{
             margin: 0;
             background-color: aqua;
         }
+        button{
+            all: unset;
+            display: inline;
+            cursor: pointer;
+        }
 
         nav{
+            padding-right: 10px;
             display: flex;
-            width: 17%;
+            justify-content: flex-end;
+            width: 80%;
             background-color: #2C2F48;
             float: right;
-            border-left: 1px solid rgba(255, 255, 255, 1); 
-            border-bottom: 1px solid rgba(255, 255, 255, 1);
+          
         }
 
         .nav-icons{
             display: flex;
             flex-direction: row;
             gap:50px;
-            padding: 10px 0 20px 15px;
+            padding: 10px 0 10px 15px;
+            border-left: 1px solid rgba(255, 255, 255, 0.4); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
         }
 
+        .search-bar{
+            display: flex;
+            align-items: center;
+            margin-right: 40%;
+            
+        }
+
+        .search-button {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to bottom, #2E335A, #1C1B33); /* Background color */
+            color: white; /* Text color */
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 5px; /* Rounded corners */
+            padding: 0 200px; /* Padding for spacing inside the button */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth color transition */
+            width: 100%; /* Make the button stretch across the full width of the parent */
+            max-width: 400px; /* Optionally, limit the width to a max value */
+            margin-left: 50%;
+        }
+        
+        .search-text {
+            margin-left: 8px; /* Adds space between the icon and the text */
+            color: white;
+            font-size: 14px; /* Adjust the font size as needed */
+        }
+        
+
+       
+    
