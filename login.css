@@ -1,0 +1,79 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set body height to 100% viewport height */
+    background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHwwfDB8fHww');
+    background-size: cover; /* Ensure image covers entire viewport */
+    background-position: center; /* Center image horizontally and vertically */
+    display: flex; /* Allow centering of login form */
+    justify-content: center; /* Center login form horizontally */
+    align-items: center; /* Center login form vertically */
+  }
+  
+  .login {
+    border: none; /* Remove border as background image covers everything */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75); /* Adjust shadow for better contrast */
+    padding: 40px; /* Maintain padding for content within the form */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%; /* Maintain full width within login container */
+    
+  }
+  
+  h1 {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: white; /* !!!we need to adjust this i think*/
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+  
+  input {
+    background: rgba(0, 0, 0, 0.2); /* Adjust background transparency for better readability */
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .fa-eye, .fa-eye-slash {
+    cursor: pointer;
+    color: white;  /*this shit is not working any idea how to fix ???*/
+    }
+
+  button {
+    background: linear-gradient(to bottom, #1D203E, #292D42);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .login {
+      width: 500px; /* Adjust width for larger screens */
+    }
+  }
