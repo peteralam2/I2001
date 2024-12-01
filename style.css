@@ -6,7 +6,7 @@
        body{
             margin: 0;
 
-            background-color: #2C2F48; /*adjusted the background color to match the nav bar*/
+            background-color: #1D203E; /*adjusted the background color to match the nav bar*-- no you need a bit of contrast my man*/
         }
         button{
             all: unset;
@@ -32,33 +32,41 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.4);
         }
 
+        #last-icon{
+            margin-left: 100px;
+        }
+
         .search-bar{
+            --padding:10px;
+            width: 800px;
             display: flex;
             align-items: center;
-            margin-right: 40%;
+            background: #1D203E; /* Background color */
+            border-radius: 28px;  
+            margin: 5px 0;
+            padding: 0 15px;
+            border: 1px solid rgba(255, 255, 255, 0.4); 
+            transition: box-shadow 0.25s;         
+        }
+
+        .search-bar:focus-within{
+            box-shadow: 0 0 5px #816E9D;
+        }
+
+        .search-input{
+            font-size: 16px;
+            color: #fff;
+            margin-left: var(--padding);
+            outline: none;
+            border: none;
+            background: transparent;
+            flex: 1;
+        }
+
+        .search-input::placeholder,
+        .search-icon{
+            color: rgba(255, 255, 255, 0.25);
             
-        }
-
-        .search-button {
-            display: flex;
-            align-items: center;
-            background: linear-gradient(to bottom, rgba(46. 51, 90,0.3), rgba(28, 27, 51, 0.3)); /* Background color */
-            color: white; 
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 5px; /* Rounded corners */
-            padding: 0 200px; /* Padding for spacing inside the button */
-            cursor: pointer;
-            transition: background-color 0.3s ease; 
-            width: 100%; /* Make the button stretch across the full width of the parent */
-            max-width: 400px;
-            margin-left: 50%;
-        }
-
-        
-        .search-text {
-            margin-left: 8px; /* Adds space between the icon and the text */
-            color: white;
-            font-size: 14px; /* Adjust the font size as needed */
         }
 
         .sidebar{
@@ -115,18 +123,7 @@
             padding-left: 10px;
           }
 
-           .search-input { /* adjusted the position and color   !!!!! we need to make it bigger*/
-            flex: 1;
-            background-color: transparent;
-            border: none;
-            color: #fff;
-            font-size: 16px;
-            padding: 10px;
-          }
           
-          .search-input::placeholder {
-            color: gray;
-          }
     
 
      
