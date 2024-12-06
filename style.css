@@ -8,7 +8,7 @@
         } 
        body{
             margin: 0;
-
+            color: #fff;
             background-color: #1D203E; /*adjusted the background color to match the nav bar*-- no you need a bit of contrast my man*/
         }
         button{
@@ -127,7 +127,107 @@
             padding-left: 10px;
           }
 
+          .discover{
+            display:inline-flex;
+            flex-direction: row;
+            padding: 20px;
+          }
+
+          .discover svg{
+            margin-right: 15px;
+          }
+
+          .wrapper{
+            display: flex;
+          }
           
+          .list-of-genres{
+           height: 240px;
+           display: flex;
+           flex-wrap: nowrap;
+           justify-content: start;
+          }
+          
+          .genre{
+            width: 300px;
+            overflow: hidden;
+            border-radius: 20px;
+            border: 1px solid var(--base-variant);
+            box-shadow: 2px 2px 5px 0px var(--nav-color);
+            cursor:pointer;
+            display: flex;
+            align-items: flex-end;
+            margin: 8px;
+            background-position: center; 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+          }
+          
+          .row{
+            background-color: rgba(129, 110, 157, 0.5);
+          }
+          
+          .genre >.row{
+            color: white;
+            display: flex;
+            flex-wrap: nowrap;
+          }
+          
+          
+          .genre > .row > .description{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+            height: 30px;
+            width: 325px;
+            opacity: 1;
+            margin-left: 10px;
+          }
+          
+          .description p{
+            padding-top: 5px;
+            line-height: 1;
+            font-size: .9rem;
+          }
+          
+          .description h4{
+            text-transform: uppercase;
+          }
+
+          .list-of-genres input{
+            display: none;
+          }
+          
+          .list-of-genres input:checked + label {
+           transform: scale(1.03);
+           box-shadow: 0 0 5px #816E9D;;
+          }
+          
+          .genre[for="c1"] {
+            background-image: url('img/rock.jpg');
+          }
+          .genre[for="c2"] {
+            background-image: url('img/pop.jpg');
+          }
+          .genre[for="c3"] {
+            background-image: url('img/arabic.jpg');
+          }
+          .genre[for="c4"] {
+            background-image: url('img/indie.jpg');
+          }
+
+
+          .top-music{
+            padding: 20px;
+            padding-top: 30px;
+            display:inline-flex;
+            flex-direction: row;
+          }
+
+          .top-music svg{
+            margin-right: 15px;
+          }
     
 
      
