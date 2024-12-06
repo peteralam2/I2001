@@ -26,3 +26,25 @@ link.addEventListener('click', (event) => {
         alert("Please enter a password.");
     }
 });
+
+
+
+//this part is specified to the personal id page
+
+
+// Store user information in local storage
+function storeUsername() {
+  const usernameInput = document.getElementById('usernameInput');
+  const username = usernameInput.value;
+
+  localStorage.setItem('username', username);
+}
+
+
+// Retrieve and display user information
+const username = localStorage.getItem('username');
+const password = localStorage.getItem('password');
+
+
+document.getElementById('username').textContent = username;
+document.getElementById('password').textContent = password;
