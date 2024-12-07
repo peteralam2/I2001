@@ -139,6 +139,8 @@
 
           .wrapper{
             display: flex;
+            flex-direction: row;
+            
           }
           
           .list-of-genres{
