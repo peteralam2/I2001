@@ -8,7 +8,7 @@
 <body>
     <div id="userInfo">
         <p>Username: <span id="username"></span></p>
-        <p>Email: <span id="email"></span></p>
+        <p>Password: <span id="password"></span></p>
     </div>
 </body>
 </html>
