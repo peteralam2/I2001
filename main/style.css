@@ -219,16 +219,16 @@
           }
           
           .genre[for="c1"] {
-            background-image: url('img/rock.jpg');
+            background-image: url('/img/rock.jpg');
           }
           .genre[for="c2"] {
-            background-image: url('img/pop.jpg');
+            background-image: url('/img/pop.jpg');
           }
           .genre[for="c3"] {
-            background-image: url('img/arabic.jpg');
+            background-image: url('/img/arabic.jpg');
           }
           .genre[for="c4"] {
-            background-image: url('img/indie.jpg');
+            background-image: url('/img/indie.jpg');
           }
 
 
