@@ -1,0 +1,195 @@
+* {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes sure padding and border are included in the element's total width/height */
+}
+
+body {
+    margin: 0;
+    color: #fff;
+    background-color: #1D203E; /* Background color */
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #2C2F48; /* Container background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.setting {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="range"] {
+    width: 100%;
+    background: #3A3F58; /* Range background color */
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #816E9D; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #816E9D; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5E4E91; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #816E9D; /* Button hover color */
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+#volumeValue {
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #1D203E;
+}
+
+.container.dark {
+    background: #2C2F48;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}* {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes sure padding and border are included in the element's total width/height */
+}
+
+body {
+    margin: 0;
+    color: #fff;
+    background-color: #1D203E; /* Background color */
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #2C2F48; /* Container background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.setting {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="range"] {
+    width: 100%;
+    background: #3A3F58; /* Range background color */
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #816E9D; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #816E9D; /* Thumb color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5E4E91; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #816E9D; /* Button hover color */
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+#volumeValue {
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #1D203E;
+}
+
+.container.dark {
+    background: #2C2F48;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}

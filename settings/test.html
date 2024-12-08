@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App Settings</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        <div class="setting">
+            <label for="theme">Theme:</label>
+            <select id="theme" onchange="changeTheme()">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+        <div class="setting">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="100" value="50" oninput="updateVolume(this.value)">
+            <span id="volumeValue">50</span>
+        </div>
+        <div class="setting">
+            <label for="notifications">Enable Notifications:</label>
+            <input type="checkbox" id="notifications" onchange="toggleNotifications()">
+        </div>
+        <button onclick="saveSettings()">Save Settings</button>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
