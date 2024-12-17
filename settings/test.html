@@ -12,8 +12,9 @@
         <div class="setting">
             <label for="theme">Theme:</label>
             <select id="theme" onchange="changeTheme()">
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
+                <option selected disabled value="">Theme</option>
+                <option value="light">Dark</option>
+                <option value="dark">Light</option> <!-- had to give the light mode the dark value since we where working on the dark mode from the begenning as the main mode -->
             </select>
         </div>
         <div class="setting">
