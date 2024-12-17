@@ -1,8 +1,9 @@
  // Import the functions you need from the SDKs you need
  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
- import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
- import{getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
- 
+ import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+ import{getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js";
+
+
  const firebaseConfig = {
     apiKey: "AIzaSyCHgXFgXvA9rJhQH-3wYMRvy2AFzGh8G_k",
 
@@ -96,3 +97,29 @@
         }
     })
  })
+
+// Forgot Password Functionality
+const forgotPasswordLink = document.getElementById('forgotPassword'); 
+
+forgotPasswordLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    const email = document.getElementById('email').value; 
+
+    if (!email) {
+        showMessage('Please enter your email address.', 'signInMessage');
+        return;
+    }
+    const auth = getAuth();
+    sendPasswordResetEmail(auth, email)
+        .then(() => {
+            showMessage('Password reset email sent. Check your inbox.', 'signInMessage');
+        })
+        .catch((error) => {
+            console.error('Error sending reset email:', error);
+            if (error.code === 'auth/user-not-found') {
+                showMessage('No user found with this email.', 'signInMessage');
+            } else {
+                showMessage('Failed to send reset email. Try again later.', 'signInMessage');
+            }
+        });
+});
