@@ -1,20 +1,33 @@
-// Function to change the theme
-function changeTheme() {
-    const themeSelect = document.getElementById('theme');
-    const selectedTheme = themeSelect.value;
+//dark mode enable/disable
 
-    // Change the body class based on the selected theme
-    if (selectedTheme === 'dark') {
-        document.body.classList.add('dark');
-        document.querySelector('.container').classList.add('dark');
-    } else {
-        document.body.classList.remove('dark');
-        document.querySelector('.container').classList.remove('dark');
-    }
+let darkmode = localStorage.getItem('darkmode')
+const themeSwitch = document.getElementById('theme')
+const sideThemeSwitch = document.getElementById('side-theme-switch')
 
-    // Save the selected theme in localStorage
-    localStorage.setItem('theme', selectedTheme);
+const enableDarkmode = () => {
+  document.body.classList.add('darkmode')
+  localStorage.setItem('darkmode', 'active')
 }
+
+const disableDarkmode = () => {
+  document.body.classList.remove('darkmode')
+  localStorage.setItem('darkmode', null)
+}
+
+if(darkmode === "active") enableDarkmode()
+
+themeSwitch.addEventListener("click", () => {
+  darkmode = localStorage.getItem('darkmode')
+  darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+})
+
+if(darkmode === "active") enableDarkmode()
+
+  sideThemeSwitch.addEventListener("click", () => {
+    darkmode = localStorage.getItem('darkmode')
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+  })
+
 
 // Function to update the volume display
 function updateVolume(value) {

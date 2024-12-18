@@ -1,3 +1,21 @@
+        :root{
+
+          --background-color: #E5D9F2 ;
+          --nav-color: #CDC1FF;
+          --text-color: #000;
+          --accent-color: linear-gradient(to bottom, #A294F9, #E5D9F2);
+          --shadow-color: #CDC1FF;
+          --semi-transparent: rgba(162, 148, 249, 0.5);
+        }
+        .darkmode{
+          --background-color: #1D203E;
+          --nav-color: #2C2F48;
+          --text-color: #fff;
+          --accent-color: linear-gradient(to bottom, #5E4E91, #816E9D);
+          --shadow-color: #816E9D;
+          --semi-transparent: rgba(129, 110, 157, 0.5)
+        }
+
         * {
             font-family: "Lato", sans-serif;
             font-weight: 400;
@@ -5,11 +23,12 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box; /* Makes sure padding and border are included in the element's total width/height */
+            
         } 
        body{
             margin: 0;
-            color: #fff;
-            background-color: #1D203E; /*adjusted the background color to match the nav bar*-- no you need a bit of contrast my man*/
+            color: var(--text-color);
+            background-color: var(--background-color); /*adjusted the background color to match the nav bar*-- no you need a bit of contrast my man*/
             overflow-x:hidden;
           }
         button{
@@ -22,7 +41,7 @@
             display: flex;
             justify-content: flex-end;
             width: 80%;
-            background-color: #2C2F48;
+            background-color: var(--nav-color);
             float: right;
           
         }
@@ -45,7 +64,7 @@
             width: 800px;
             display: flex;
             align-items: center;
-            background: #1D203E; /* Background color */
+            background: var(--background-color); 
             border-radius: 28px;  
             margin: 5px 0;
             padding: 0 15px;
@@ -54,12 +73,12 @@
         }
 
         .search-bar:focus-within{
-            box-shadow: 0 0 5px #816E9D;
+            box-shadow: 0 0 5px var(--shadow-color);
         }
 
         .search-input{
             font-size: 16px;
-            color: #fff;
+            color: var(--text-color);
             margin-left: var(--padding);
             outline: none;
             border: none;
@@ -69,7 +88,7 @@
 
         .search-input::placeholder,
         .search-icon{
-            color: rgba(255, 255, 255, 0.25);
+            color: var(--semi-transparent);
             
         }
 
@@ -79,7 +98,7 @@
             height: 100vh;
             
             justify-content: flex-start;
-            background: linear-gradient(to bottom, #5E4E91, #816E9D);
+            background: var(--accent-color);
             float: left;
             flex-direction: column;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
@@ -167,7 +186,7 @@
             overflow: hidden;
             border-radius: 20px;
             border: 1px solid var(--base-variant);
-            box-shadow: 2px 2px 5px 0px var(--nav-color);
+            box-shadow: 2px 2px 5px 0px var(--shadow-color);
             cursor:pointer;
             display: flex;
             align-items: flex-end;
@@ -178,11 +197,11 @@
           }
           
           .row{
-            background-color: rgba(129, 110, 157, 0.5);
+            background-color: var(--semi-transparent);
           }
           
           .genre >.row{
-            color: white;
+            color: var(--text-color);
             display: flex;
             flex-wrap: nowrap;
           }
@@ -215,7 +234,7 @@
           
           .list-of-genres input:checked + label {
            transform: scale(1.03);
-           box-shadow: 0 0 5px #816E9D;;
+           box-shadow: 0 0 5px var(--shadow-color);
           }
           
           .genre[for="c1"] {

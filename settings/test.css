@@ -1,3 +1,22 @@
+:root{
+
+    --background-color: #E5D9F2 ;
+    --nav-color: #CDC1FF;
+    --text-color: #000;
+    --accent-color: linear-gradient(to bottom, #A294F9, #E5D9F2);
+    --shadow-color: #CDC1FF;
+    --semi-transparent: rgba(162, 148, 249, 0.5);
+  }
+  .darkmode{
+    --background-color: #1D203E;
+    --nav-color: #2C2F48;
+    --text-color: #fff;
+    --accent-color: linear-gradient(to bottom, #5E4E91, #816E9D);
+    --shadow-color: #816E9D;
+    --semi-transparent: rgba(129, 110, 157, 0.5)
+  }
+
+
 * {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -9,18 +28,18 @@
 
 body {
     margin: 0;
-    color: #fff;
-    background-color: #1D203E; /* Background color */
+    color: var(--text-color);
+    background-color: var(--nav-color); /* Background color */
     overflow-x: hidden;
 }
 
 .container {
     max-width: 600px;
     margin: 20px auto;
-    background: #2C2F48; /* Container background color */
+    background:var(--background-color); /* Container background color */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px var(--shadow-color);
 }
 
 h1 {
@@ -35,7 +54,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-color);
 }
 
 input[type="range"] {
@@ -49,7 +68,7 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 15px;
     height: 15px;
-    background: #816E9D; /* Thumb color */
+    background: var(--accent-color); /* Thumb color */
     border-radius: 50%;
     cursor: pointer;
 }
@@ -57,7 +76,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
     width: 15px;
     height: 15px;
-    background: #816E9D; /* Thumb color */
+    background: var(--accent-color); /* Thumb color */
     border-radius: 50%;
     cursor: pointer;
 }
@@ -66,8 +85,8 @@ button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #5E4E91; /* Button background color */
-    color: white;
+    background-color: var(--background-color); /* Button background color */
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -83,16 +102,6 @@ input[type="checkbox"] {
 }
 
 #volumeValue {
-    color: #fff;
+    color: var(--text-color);
     margin-left: 10px;
-}
-
-/* Dark theme styles */
-body.dark {
-    background-color: whitesmoke;
-}
-
-.container.dark {
-    background: #2C2F48;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
