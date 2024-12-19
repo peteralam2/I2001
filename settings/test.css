@@ -27,6 +27,9 @@
 }
 
 body {
+    background-image: url('/img/settingsBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +94,8 @@ input[type="range"]::-moz-range-thumb {
 
 button {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 10px;
     margin:10px;
@@ -137,7 +142,7 @@ input[type="checkbox"] {
     align-items: center;
     flex-direction: row-reverse;
     box-shadow: 20px whitesmoke;
-
+    
 }
 
 /* Style the slider container */
@@ -236,7 +241,7 @@ input[type="checkbox"] {
   /* Change the background when checkbox is checked */
   .notification-container input:checked + .notification-slider {
     transform: translateX(60px); /* Move the slider to the right */
-    background-color: #4CAF50; /* Green background */
+    background-color: #816E9D; /* Green background */
   }
   
   /* When checked, grow the bell icon and change text color */
@@ -251,6 +256,12 @@ input[type="checkbox"] {
   
   /* Optional: Hover effect */
   .notification-container:hover {
-    background-color: #a0d98f; /* Lighter green */
+    background-color: #816E9D; 
+  }
+
+  .setting input[type="checkbox"] { /* hide the original checkbox*/
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
   
