@@ -7,11 +7,13 @@ const sideThemeSwitch = document.getElementById('side-theme-switch')
 const enableDarkmode = () => {
   document.body.classList.add('darkmode')
   localStorage.setItem('darkmode', 'active')
+  themeSwitch.textContent = 'Dark';
 }
 
 const disableDarkmode = () => {
   document.body.classList.remove('darkmode')
   localStorage.setItem('darkmode', null)
+  themeSwitch.textContent = 'Light';
 }
 
 if(darkmode === "active") enableDarkmode()
@@ -19,6 +21,7 @@ if(darkmode === "active") enableDarkmode()
 themeSwitch.addEventListener("click", () => {
   darkmode = localStorage.getItem('darkmode')
   darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+  
 })
 
 if(darkmode === "active") enableDarkmode()
@@ -27,6 +30,8 @@ if(darkmode === "active") enableDarkmode()
     darkmode = localStorage.getItem('darkmode')
     darkmode !== "active" ? enableDarkmode() : disableDarkmode()
   })
+
+
 
 
 // Function to update the volume display
@@ -77,3 +82,13 @@ function saveSettings() {
 
     alert(`Settings saved:\nTheme: ${theme}\nVolume: ${volume}\nNotifications: ${notifications ? 'Enabled' : 'Disabled'}`);
 }
+
+
+const btn = document.getElementById('theme');
+
+// ✅ Change button text on click
+btn.addEventListener('click', function handleClick() {
+  const initialText = 'Dark';
+
+  btn.innerHTML = `<span style="background-color: salmon">Button clicked<span>`;
+});

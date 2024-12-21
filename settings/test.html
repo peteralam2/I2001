@@ -8,19 +8,36 @@
 </head>
 <body>
     <div class="container">
-        <h1>Settings</h1>
-        <div class="setting">
-            <button id="theme" onchange="changeTheme()">Theme</button>
+
+        <div class="settings-text">
+            <h1>Settings</h1>
         </div>
+
+        <div class="back">
+            <a href="/main/index.html"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed" ><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></a>
+            <p>Go back</p>
+        </div>
+
+        <br><br>
+     
+            
+
+        <div class="theme">
+            <p>Theme: </p>
+            <button id="theme" onchange="changeTheme()"">Dark</button>
+        </div>
+        <br>
         <div class="setting">
             <label for="volume">Volume:</label>
             <input class="slider" type="range" id="volume" min="0" max="100" value="50" oninput="updateVolume(this.value)">
             <span id="volumeValue">50</span>
         </div>
+        <br>
         <div class="setting">
             <label for="notifications" ><span class="slider-icon">🔔</span><span class="slider-text">Notifications</span></label>
             <input type="checkbox" id="notifications" onchange="toggleNotifications()">
         </div>
+        <br>
         <div class="btn-div">
             <button id="logout_btn" onclick="window.location.href='/login/login.html'">Log Out</button> <!-- this link does not work yet i guess wwe should put all the files in one at the end then double check the links -->
             <button id="save_btn" onclick="saveSettings()">Save Settings</button>
