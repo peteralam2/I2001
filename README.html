@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .tableOfContent {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .tableOfContent h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        .tableOfContent ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .tableOfContent ul li {
+            padding: 8px 0;
+        }
+        .tableOfContent a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .tableOfContent a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        h2 {
+            text-transform: capitalize;
+            font-size: 1.8em;
+            color: #333;
+            margin-top: 0;
+        }
+        h3 {
+            text-transform: capitalize;            
+            font-size: 1.5em;
+            color: #333;
+        }
+        p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+        figcaption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .startUp, .main, .settings {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .startUp figure, .main figure, .settings figure {
+            margin: 0;
+        }
+        .startUp img, .main img, .settings img {
+            width: 100%;
+            height: auto;
+        }
+        
+        /* Anchor styles */
+        a.anchor {
+            text-decoration: none;
+            color: #333;
+        }
+        a.anchor:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Musify Documentation</h1>
+    </header>
+    
+    <section class="tableOfContent">
+        <h1>Table of content</h1>
+        <ul>
+            <li><a href="#intro" class="anchor">Introduction</a></li>        
+            <li><a href="#gettingStarted" class="anchor">Getting Started</a></li>        
+            <li><a href="#userGuide" class="anchor">User Guide</a></li>        
+            <li><a href="#developerGuide" class="anchor">Developer Guide</a></li>        
+            <li><a href="#releaseNotes" class="anchor">Release notes</a></li>
+            <li><a href="#references" class="anchor">Glossary and References</a></li>        
+        </ul>
+    </section>
+    
+    <section class="Intro" id="intro">
+        <h2><a href="#top" class="anchor">Introduction</a></h2>
+        <p>This app is made as a project for the I2201 course at the Lebanese University Branch 2 Fanar. <br>
+        The Goal of this app is to show the Students Developing skills using Development tools and languages.<br>
+        The App is Developed and Presented by second-year computer science students </p>
+    </section>
+    
+    <section class="Getstarted" id="gettingStarted">
+        <h2><a href="#top" class="anchor">Getting Started</a></h2>
+        <h3>overview</h3>
+        <p>Welcome to <strong>Musify!</strong><br>
+            Musify is a powerful example of how determination and hard work can lead students to achieve great results.<br>
+            Musify is a music app designed specifically for second-year Computer Science students.<br>
+            In the following document, you'll find everything you need to know about the app, including its features, installation, and usage instructions.
+        </p>
+
+        <h3>Installation</h3>
+        <p>The purpose of Musify is to provide students-developers with a strong and complete university project. It is not designed to be installed or used yet. <br>
+            Musify's main code and documentation, including this README file, are preserved in a repository on GitHub shared by the two students-developers of the app.</p>
+         
+        <h3>Configuration</h3>
+        <article>
+            Musify holds some feature that could be customized in the settings section:
+            <ol type="I">
+                <li>
+                    <strong>Theme:</strong> The app can be used in both light and dark mode by clicking the button next to "Theme" in the settings page
+                </li>
+                <li>
+                    <strong>Notifications:</strong> Musify Notifications preferences can be updated by clicking on the bell icon in the settings page.
+                </li>
+                <li>
+                    <strong>Languages:</strong> Musify is mainly programmed in English language and does not support other translations 
+                </li>
+                <li>
+                    <strong>User Info:</strong> Any user informations can be found in the settings page (username - email address - full name)
+                </li>
+                <li>
+                    <strong>Log in and Log out:</strong> The user can log in to the app at any point and is able to sign in by creating his own account.<br> 
+                    In addition, the user can log out of the app by clicking the log out button "settings > log out"
+                </li>
+                <li>
+                    <strong>Password Recovery:</strong> In case of lost password the user can request to change his password to regain access to the app using the "forget password?" button in the login page.
+                    <b>For Proper Use</b> make sure to write your correct email adrress in it's specified place <b>Before</b> clicking.
+                </li>
+                <li>
+                    <strong>Notes:</strong> Musify contains some cool animations including one before opening the login page! (could refresh the page using F5 to see the animation &#128521;)<br>
+                    In addition this app is designed to be screen responsive!
+                </li>
+            </ol>
+        </article>
+    </section>
+    
+    <section class="userGuide" id="userGuide">
+        <h2><a href="#top" class="anchor">User Guide</a></h2>
+        <p class="subtitleUserGuide">In the following, All the infos needed for a smooth user experience</p>
+        <div class="startUp">
+            <figure>
+                <img src="" id="login" alt="login-page">
+                <figcaption for="login">This is the login page, this includes 2 inputs the Email and the Password of the user in order to access the content of the app</figcaption>
+            </figure>
+            <figure>
+                <img src="" id="signUp" alt="sign-up">
+                <figcaption for="signUp">This is the sign up page, you will need to input your Full name along with the email you'd like to operate with for future password recovery as well as the password</figcaption>
+            </figure>
+        </div>
+        <div class="main">
+            <figure>
+                <img src="" id="mainPage" alt="main-page">
+                <figcaption for="mainPage">Above the main page of the app! It includes all the songs for you to enjoy splitted into 4 divisions Pop,Arabic,Rock,Indie<br>
+            in addition this page includes some of the popular singers you might be interested in along with some news about them</figcaption>
+            </figure>
+            <figure>
+                <img src="" id="periferals" alt="periferals">
+                <figcaption for="periferals">On the right side and in the top of the screen you can see the different parts of the app in addition to the "search bar" and the icons of "settings" .... </figcaption>
+            </figure>
+            <figure>
+                <img src="" id="musicUx" alt="music-bar">
+                <figcaption for="musicUx">This is the music bar where you will be able to shuffle between songs, stop/play the song as well as the ability to scrubble so that you can enjoy your favorite part of a song infinitly!</figcaption>
+           </figure>
+        </div>
+        <div class="settings">
+            <figure>
+                <img src="" id="settings" alt="settings-page">
+                <figcaption for="settings">Here is the settings page where all the features and customization are made including Theme change,Notifications preferences,Volume a save button and a log out button<br>
+                don't forget to click the save settings button in order to apply your changes</figcaption>
+            </figure>
+        </div>
+    </section>
+    
+    <section class="developerGuide" id="developerGuide">
+        <h2><a href="#top" class="anchor">Developer Guide</a></h2>
+        <p>Musify is consited of (...) pages: Login,sign-up,main,settings (....) <br> Each page has it's own HTML,CSS and JAVASCRIPT files where it is customized carefully for a good user experience</p>
+        <p>VScode is the primary workplace of the students-developers</p>
+        <p>All HTML,tags used in the base code each work as intended and all codes are written in a semantic format to reflect the neat and professionnal work the students-developers have made</p>
+        <p>The CSS used in the pages is mainly flexbox format and that helped us create a screen responsive application that suits all types of screens</p>
+        <p>CSS is also used in some animations and some shadowing especially for the buttons and the loding screen at the pre-login page!</p>
+        <p>JAVASCRIPT is mainly used in the settings, it helped us changing the theme for all the pages once applied by the user, as well as in the volume bar to display at what volume the user is pointing at in addition to the save button and the log out button that takes the user to the log in page!</p>
+        <p>JAVASCRIPT was also used to provide a safe use of the app by adding a firebase thus the user will not be able to operate in the application without signing in first </p>
+        <p><strong>Git/GitHub was used in the making of this app in order to facilitate the work of the students-developers especially that it helped with the coordination and the easy feature manipulation</strong></p>
+        <p id="notes"><b><i>Please note that in the production of Musify the students-developers were able to invest there time self-learning in addition to what was taught in class where they were able to use keyframes for animation and variables in CSS to adjust the theme of the application as well as the ability to make a firebase for safe use of the app </i></b></p>
+    </section>
+    
+    <section class="releaseNotes" id="releaseNotes">
+        <h2><a href="#top" class="anchor">Release Notes</a></h2>
+        <p>This application will not be released to Public and will be presented as a university project for the two students-developers. Each one of them will Hold a copy of the original code-base in case they will need it for future courses use</p>
+        <p>This README file will be sent to the professor as a pre-demo of the app and the live demo will hold place at the university</p>
+    </section>
+    
+    <section class="references" id="references">
+        <h2><a href="#top" class="anchor">References</a></h2>
+        <ul>
+            <li><strong>Code Editor:</strong> Visual Studio code with live server extension</li>
+            <li><strong>Firebase:</strong> Used for authentication and data storage</li>
+            <li><strong>GitHub:</strong> For version control</li>
+            <li><strong>No template was used in the production of the application everything was made from scratch</strong></li>
+            <li><strong>Students:</strong> Hani Maanak & Peter AL Alam</li>
+            <li><strong>Target Professor:</strong> Dr. Hisham El Khoury</li>
+        </ul>
+        </ul>
+    </section>
+    
+</body>
+</html>
