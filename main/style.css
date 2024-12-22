@@ -37,60 +37,8 @@
             cursor: pointer;
         }
 
-        nav{
-            display: flex;
-            justify-content: flex-end;
-            width: 80%;
-            background-color: var(--nav-color);
-            float: right;
-          
-        }
 
-        .nav-icons{
-            display: flex;
-            flex-direction: row;
-            gap:50px;
-            padding: 10px 0 10px 15px;
-            border-left: 1px solid rgba(255, 255, 255, 0.4); 
-            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-        }
 
-        #last-icon{
-            margin-left: 100px;
-        }
-
-        .search-bar{
-            --padding:10px;
-            width: 800px;
-            display: flex;
-            align-items: center;
-            background: var(--background-color); 
-            border-radius: 28px;  
-            margin: 5px 0;
-            padding: 0 15px;
-            border: 1px solid rgba(255, 255, 255, 0.4); 
-            transition: box-shadow 0.5s;         
-        }
-
-        .search-bar:focus-within{
-            box-shadow: 0 0 5px var(--shadow-color);
-        }
-
-        .search-input{
-            font-size: 16px;
-            color: var(--text-color);
-            margin-left: var(--padding);
-            outline: none;
-            border: none;
-            background: transparent;
-            flex: 1;
-        }
-
-        .search-input::placeholder,
-        .search-icon{
-            color: var(--semi-transparent);
-            
-        }
 
         .sidebar{
             display: flex;
@@ -249,6 +197,12 @@
           .genre[for="c4"] {
             background-image: url('/img/indie.jpg');
           }
+          .genre[for="c5"] {
+            background-image: url('/img/electronic.jpg');
+          }
+          .genre[for="c6"] {
+            background-image: url('/img/hip-hop.jpg');
+          }
 
 
           .top-music{
@@ -341,11 +295,23 @@
           width: 18%;
           float: right;
           background-color: var(--nav-color);
-          padding-top: 32px;
+          
         }
 
 
+        .nav-icons{
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          gap:50px; 
+          border-left: 1px solid rgba(255, 255, 255, 0.4); 
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+      }
+
+
         .image-container {
+          padding-top: 32px;
           display: flex;
           justify-content: center;
           align-items: center;
