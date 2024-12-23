@@ -288,7 +288,7 @@
             border-radius: 5px; /* Rounded corners */
         }
 
-        .lside-bar{
+        .rside-bar{
           position: relative;
           height: 120vh;
           width: 18%;
@@ -299,20 +299,38 @@
         }
 
 
-        .settings-icon{
+        .nav-icons{
           display: flex;
-          justify-content: flex-end;
-          margin-right: 12px;
+          justify-content:space-between;
           flex-direction: row;
-          gap:50px; 
           border-left: 1px solid rgba(255, 255, 255, 0.4); 
           border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
+    }
+    .rside-bar.collapsed {
+        width: 40px;
+        height: 10px;
+    }
+
+    .rside-bar.collapsed > .image-container{
+      display: none;
+    }
+    
+
+    .untoggle-button{
+      display: none;
+    }
+
+      .nav-icon{
+        margin: 0 8px;
+      }
+      .nav-icon svg{
+        fill: var(--text-color);
       }
 
-        .settings-icon svg{
-          fill: var(--text-color);
-        }
+      .nav-icon svg:hover{
+        fill: var(--semi-transparent);
+      }
 
 
         .image-container {

@@ -86,7 +86,7 @@ function saveSettings() {
 
 const btn = document.getElementById('theme');
 
-// ✅ Change button text on click
+//change button text from light to dark
 btn.addEventListener('click', function handleClick() {
   const initialText = 'Dark';
 

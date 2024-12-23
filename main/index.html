@@ -12,9 +12,17 @@
     <script type="module" src="profile.js"></script>
 </head>
 <body>
-    <div class="lside-bar">
-        <nav>
-            <div class="settings-icon">
+    <div class="rside-bar">
+        <nav class="nav-icons">
+            
+            <div class="nav-icon">
+                <button id="toggle-sidebar" class="toggle-button">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-440v240h-80v-160H200v-80h240Zm160-320v160h160v80H520v-240h80Z"/></svg>
+                </button>
+            </div>
+
+
+            <div class="nav-icon">
                 <!--setting icon-->
                 <button onclick="window.location.href='test.html'">
                 <a href="/settings/test.html">
@@ -22,6 +30,7 @@
                 </button></a>
             </div>
         </nav>
+
 
         <div class="image-container">
 
@@ -297,6 +306,7 @@
 
     <script src="/settings/test.js"></script>
     <script src="/main/footerscirpt.js"></script>
+    <script src="/main/main.js"></script>
 
 </body>
 </html>
