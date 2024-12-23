@@ -25,6 +25,8 @@
             box-sizing: border-box; /* Makes sure padding and border are included in the element's total width/height */
             
         } 
+
+
        body{
             margin: 0;
             color: var(--text-color);
@@ -36,15 +38,13 @@
             display: inline;
             cursor: pointer;
         }
-
-
+        
 
 
         .sidebar{
             display: flex;
             width: 20%;
-            height:120vh;
-            
+            height:120vh;   
             justify-content: flex-start;
             background: var(--accent-color);
             float: left;
@@ -79,7 +79,6 @@
           
           .menu-item svg{
             padding-top: 5px;
-
           }
 
           .menu-item {
@@ -295,19 +294,25 @@
           width: 18%;
           float: right;
           background-color: var(--nav-color);
+          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
           
         }
 
 
-        .nav-icons{
+        .settings-icon{
           display: flex;
-          justify-content: center;
+          justify-content: flex-end;
+          margin-right: 12px;
           flex-direction: row;
           gap:50px; 
           border-left: 1px solid rgba(255, 255, 255, 0.4); 
           border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
       }
+
+        .settings-icon svg{
+          fill: var(--text-color);
+        }
 
 
         .image-container {
