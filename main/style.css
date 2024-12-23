@@ -43,7 +43,7 @@
         .sidebar{
             display: flex;
             width: 20%;
-            height: 100vh;
+            height:120vh;
             
             justify-content: flex-start;
             background: var(--accent-color);
@@ -291,7 +291,7 @@
 
         .lside-bar{
           position: relative;
-          height: 100vh;
+          height: 120vh;
           width: 18%;
           float: right;
           background-color: var(--nav-color);
@@ -325,7 +325,7 @@
           text-align: center;
         }
 
-        .username {
+        .usersubs {
           font-size: 18px;
           font-weight: bold;
           margin: 10px 0 5px;
@@ -362,3 +362,102 @@
             box-shadow: 0 0 10px #5d5dff, 0 0 20px #5d5dff, 0 0 40px rgba(93, 93, 255, 0.6);
           }
         }
+        
+        .awrapper{
+          display: flex;
+          flex-direction: row;
+          max-width: 100%;
+          overflow-x: auto;
+        }
+        
+        .artists{
+         margin-left: 24px ;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: flex-start;
+         max-width: 100%;
+         overflow-x: auto;
+         flex-wrap: wrap;
+         gap:16px
+        }
+        
+        .artist{
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          border-radius: 50%;
+          border: 1px solid var(--base-variant);
+          box-shadow: 2px 2px 5px 0px var(--shadow-color);
+          cursor:pointer;
+          display: flex;
+          align-items: flex-end;
+          margin: 8px;
+          background-position: center; 
+          background-size: cover; 
+          background-repeat: no-repeat; 
+        }
+        
+        .artist-row{  
+          background-color: var(--semi-transparent);
+        }
+        
+        .artist >.artist-row{
+          color: var(--text-color);
+          display: flex;
+          flex-wrap: nowrap;
+        }
+        
+        
+        .artist > .artist-row > .artist-subs{
+          display: flex;
+          justify-content: center;
+          overflow: hidden;
+          height: 30px;
+          width: 140px;
+          opacity: 1;
+          margin-left: 10px;
+        }
+        
+        .artist-subs p{
+          padding-top: 5px;
+          line-height: 1;
+          font-size: .7rem;
+        }
+
+        .artist-name{
+          display: flex;
+          flex-direction: column; /* Ensures content stacks vertically */
+          align-items: center; /* Centers the text horizontally */
+          justify-content:center; /* Centers the text vertically */
+          width: 100%; /* Spans full width of the parent */
+          overflow: hidden;
+          height: auto; /* Adjust height to fit content */
+          margin-left: 0; /* Remove left margin for proper centering */
+        }
+
+        .artists input{
+          display: none;
+        }
+        
+        .artists input:checked + label {
+         transform: scale(1.03);
+         box-shadow: 0 0 5px var(--shadow-color);
+        }
+        
+        .artist[for="d1"] {
+          background-image: url('/img/kendrick_lamar.jpg');
+        }
+        .artist[for="d2"] {
+          background-image: url('/img/queen.jpg');
+        }
+        .artist[for="d3"] {
+          background-image: url('/img/radiohead.jpg');
+        }
+        .artist[for="d4"] {
+          background-image: url('/img/kid_cudi.jpg');
+        }
+        .artist[for="d5"] {
+          background-image: url('/img/Ziad_rahbani.jpg');
+        }
+
+
