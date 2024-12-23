@@ -1,11 +1,12 @@
         :root{
 
-          --background-color: #E5D9F2 ;
+          --background-color: #F8F8FF ;
           --nav-color: #CDC1FF;
           --text-color: #000;
           --accent-color: linear-gradient(to bottom, #A294F9, #E5D9F2);
           --shadow-color: #CDC1FF;
           --semi-transparent: rgba(162, 148, 249, 0.5);
+          --line-color: rgba(0, 0, 0, 0.4);
         }
         .darkmode{
           --background-color: #1D203E;
@@ -13,7 +14,8 @@
           --text-color: #fff;
           --accent-color: linear-gradient(to bottom, #5E4E91, #816E9D);
           --shadow-color: #816E9D;
-          --semi-transparent: rgba(129, 110, 157, 0.5)
+          --semi-transparent: rgba(129, 110, 157, 0.5);
+          --line-color: rgba(255, 255, 255, 0.4);
         }
 
         * {
@@ -38,7 +40,7 @@
             display: inline;
             cursor: pointer;
         }
-        
+
 
 
         .sidebar{
@@ -61,7 +63,7 @@
             margin-top: 18px;
             padding-left: 15px;
             margin-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            border-bottom: 1px solid var(--line-color);
             padding-bottom: 10px;
           }
 
@@ -303,13 +305,15 @@
           display: flex;
           justify-content:space-between;
           flex-direction: row;
-          border-left: 1px solid rgba(255, 255, 255, 0.4); 
-          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+          border-left: 1px solid var(--line-color); 
+          border-bottom: 1px solid var(--line-color);
 
     }
     .rside-bar.collapsed {
         width: 40px;
-        height: 10px;
+        height: 30px;
+        background-color: var(--nav-color);
+        
     }
 
     .rside-bar.collapsed > .image-container{
@@ -344,8 +348,11 @@
 
         .user-info {
           position: relative;
-          width: 250px;
+          width: 100%;
           text-align: center;
+          padding-bottom: 12px;
+          border-bottom: 1px solid var(--line-color);
+
         }
 
         .usersubs {
