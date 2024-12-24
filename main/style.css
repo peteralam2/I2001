@@ -121,7 +121,7 @@
           }
           
           .list-of-genres{
-           height: 400px;
+           height:400px;
            display: flex;
            flex-wrap: nowrap;
            justify-content: start;
@@ -310,7 +310,7 @@
 
     }
     .rside-bar.collapsed {
-        width: 40px;
+        width: 5%;
         height: 30px;
         background-color: var(--nav-color);
         
@@ -490,4 +490,89 @@
           background-image: url('/img/Ziad_rahbani.jpg');
         }
 
+
+        .settings-hover {
+          position: relative;
+          border-bottom: 1px dotted var(--background-color);
+        }
+        
+        .settings-hover:before {
+          content: attr(data-hover);
+          visibility: hidden;
+          opacity: 0;
+          width: auto;
+          background-color: var(--semi-transparent);
+          color: var(--text-color);
+          text-align:end;
+          border-radius: 5px;
+          padding: 5px 5px;
+          transition: opacity 1s ease-in-out;
+          position: absolute;
+          z-index: 1;
+          float: left;
+          top: 110%;
+          right: 8%;
+        }
+        
+        .settings-hover:hover:before {
+          opacity: 1;
+          visibility: visible;
+        }
+
+
+        .settings-hover {
+          position: relative;
+          border-bottom: 1px dotted var(--background-color);
+        }
+        
+        .settings-hover:before {
+          content: attr(data-hover);
+          visibility: hidden;
+          opacity: 0;
+          width: auto;
+          background-color: var(--semi-transparent);
+          color: var(--text-color);
+          text-align:end;
+          border-radius: 5px;
+          padding: 5px 5px;
+          transition: opacity 1s ease-in-out;
+          position: absolute;
+          z-index: 1;
+          float: left;
+          top: 110%;
+          right: 8%;
+        }
+        
+        .settings-hover:hover:before {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .toggle-hover {
+          position: relative;
+          border-bottom: 1px dotted var(--background-color);
+        }
+        
+        .toggle-hover:before {
+          content: attr(data-hover);
+          visibility: hidden;
+          opacity: 0;
+          width: auto;
+          background-color: var(--semi-transparent);
+          color: var(--text-color);
+          text-align:end;
+          border-radius: 5px;
+          padding: 5px 5px;
+          transition: opacity 1s ease-in-out;
+          position: absolute;
+          z-index: 1;
+          float: right;
+          top: 110%;
+          
+        }
+        
+        .toggle-hover:hover:before {
+          opacity: 1;
+          visibility: visible;
+        }
 
