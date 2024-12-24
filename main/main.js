@@ -1,5 +1,5 @@
 document.getElementById('toggle-sidebar').addEventListener('click', function () {
-    
+
     //change icons
     const sidebar = document.querySelector('.rside-bar');
     const menuIcon = document.getElementById('menu-icon');
@@ -21,6 +21,9 @@ document.getElementById('toggle-sidebar').addEventListener('click', function () 
         hoverSpan.dataset.hover = 'collapse';
     }
 });
+
+
+
 
 
 

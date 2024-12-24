@@ -45,14 +45,14 @@
 
         .sidebar{
             display: flex;
-            width: 20%;
+            width: 15%;
             height:120vh;   
             justify-content: flex-start;
             background: var(--accent-color);
             float: left;
             flex-direction: column;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-
+            margin-right: 40px;
 
 
         }
@@ -102,6 +102,7 @@
             border-radius: 5px;
             padding-left: 10px;
           }
+          
 
           .discover{
             display:inline-flex;
@@ -185,6 +186,7 @@
            transform: scale(1.03);
            box-shadow: 0 0 5px var(--shadow-color);
           }
+          
           
           .genre[for="c1"] {
             background-image: url('/img/rock.jpg');
@@ -494,6 +496,7 @@
         .settings-hover {
           position: relative;
           border-bottom: 1px dotted var(--background-color);
+          
         }
         
         .settings-hover:before {
@@ -517,6 +520,15 @@
         .settings-hover:hover:before {
           opacity: 1;
           visibility: visible;
+        }
+
+        .rotate-settings{
+          display: inline-block;
+          transition: transform 0.3s ease;
+        }
+
+        .rotate-settings:hover{
+          transform: rotate(30deg);
         }
 
 
@@ -575,4 +587,6 @@
           opacity: 1;
           visibility: visible;
         }
+
+      
 
