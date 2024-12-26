@@ -1,0 +1,101 @@
+:root {
+    --background-color: #F8F8FF;
+    --nav-color: #CDC1FF;
+    --text-color: #000;
+    --accent-color: linear-gradient(to bottom, #A294F9, #E5D9F2);
+    --shadow-color: #CDC1FF;
+    --semi-transparent: rgba(162, 148, 249, 0.5);
+    --line-color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--shadow-color);
+}
+
+.slide-text {
+    flex: 1;
+    background-color: var(--semi-transparent);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    box-shadow: 0 5px 10px var(--shadow-color);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        flex-direction: column;
+    }
+
+    .slide img, .slide-text {
+        max-width: 90%;
+    }
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-btn {
+    background-color: var(--semi-transparent);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 10px var(--shadow-color);
+    transition: transform 0.3s;
+}
+
+.control-btn:hover {
+    transform: scale(1.2);
+}
+
+.control-btn:active {
+    transform: scale(0.9);
+}
