@@ -1,4 +1,4 @@
-:root {
+:root { /*added the root and so i can work with some colors we need to remove this before merging*/
     --background-color: #F8F8FF;
     --nav-color: #CDC1FF;
     --text-color: #000;
