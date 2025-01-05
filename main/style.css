@@ -28,6 +28,14 @@
             
         } 
 
+       a{
+        text-decoration: none;
+        color: var(--text-color);
+       }
+
+       html{
+        scroll-behavior: smooth;
+       }
 
        body{
             margin: 0;
@@ -44,15 +52,17 @@
 
 
         .sidebar{
-            display: flex;
-            width: 15%;
-            height:120vh;   
-            justify-content: flex-start;
-            background: var(--accent-color);
-            float: left;
-            flex-direction: column;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-            margin-right: 40px;
+          z-index: 99999;
+          display: flex;
+          position: fixed;
+          width: 15%;
+          height:100vh;   
+          justify-content: flex-start;
+          background: var(--accent-color);
+          float: left;
+          flex-direction: column;
+          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+          margin-right: 40px;
 
 
         }
@@ -108,6 +118,7 @@
             display:inline-flex;
             flex-direction: row;
             padding: 20px;
+            margin-left: 16%;
           }
 
           .discover svg{
@@ -115,10 +126,12 @@
           }
 
           .wrapper{
+            
             display: flex;
             flex-direction: row;
             max-width: 100%;
             overflow-x: auto;
+            margin-left: 18%;
           }
           
           .list-of-genres{
@@ -213,58 +226,13 @@
             padding-top: 30px;
             display:inline-flex;
             flex-direction: row;
+            margin-left: 16%;
           }
 
           .top-music svg{
             margin-right: 15px;
           }
                 
-        .rside-bar{
-          position: relative;
-          height: 120vh;
-          width: 18%;
-          float: right;
-          background-color: var(--nav-color);
-          box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-          
-        }
-
-
-        .nav-icons{
-          display: flex;
-          justify-content:space-between;
-          flex-direction: row;
-          border-left: 1px solid var(--line-color); 
-          border-bottom: 1px solid var(--line-color);
-
-    }
-    .rside-bar.collapsed {
-        width: 5%;
-        height: 30px;
-        background-color: var(--nav-color);
-        
-    }
-
-    .rside-bar.collapsed > .image-container{
-      display: none;
-    }
-    
-
-    .untoggle-button{
-      display: none;
-    }
-
-      .nav-icon{
-        margin: 0 8px;
-      }
-      .nav-icon svg{
-        fill: var(--text-color);
-      }
-
-      .nav-icon svg:hover{
-        fill: var(--semi-transparent);
-      }
-
 
         .image-container {
           padding-top: 32px;
@@ -327,6 +295,7 @@
           flex-direction: row;
           max-width: 100%;
           overflow-x: auto;
+          margin-left: 18%;
         }
         
         .artists{
@@ -517,6 +486,7 @@
 
 
         .footer {
+          z-index: 99999;
           position: fixed; height: 72px;
           bottom: 0; left: 0; right: 0;
           background-color: var(--background-color);
