@@ -500,21 +500,21 @@
           display: flex; align-items: center;
         }
         
-        .leftarrow {
+        .prev-track {
           margin-left: 15px; height: 22px;
           margin-right: 30px; padding-top: 2px;
         }
         
-        .play-btn {
+        .play-pause-track {
           height: 35px;
           margin-right: 30px;
         }
-        .rightarrow {
+        .next-track {
           height: 19px; padding-bottom: 1px;
           margin-right: 20px;
         }
         
-        .ftime {
+        .current-time {
           color: var(--line-color);
           font-size: 13px;
         }
@@ -546,22 +546,24 @@
           display: flex; align-items: center;
         }
         
-        .fthumbnail {
+        .track-art {
           height: 40px;
           margin-right: 16px;
         }
         
-        .frowa {
+        .track-name {
           color: var(--text-color);
           font-size: 16px;
           margin: 0;
         }
         
-        .frowb {
+        .track-infos {
           color: var(--line-color);
           font-size: 16px;
           margin-bottom: 0;
           margin-top: 3px;
+          position:fixed;
+   
         }
         
         .dislike {
