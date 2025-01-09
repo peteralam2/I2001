@@ -108,13 +108,18 @@
         </div>
         <div class="playlist-songs">
           <ul class="song">
-                <li class="menu-item">
-                  <div class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg></div>
-                  <div class="class-art"></div>
-                  <div class="time"><p>0:00</p></div>
-                  <div class="track-name"></div>
-                  <div class="tracl-artist"></div>
-                </li>
+            <li class="menu-item">
+              <button class="play-btn" id="play-paranoid">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed">
+                  <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                </svg>
+              </button>
+              <div class="class-art"></div>
+              <div class="time"><p>0:00</p></div>
+              <div class="track-name"></div>
+              <div class="track-artist"></div>
+            </li>
+            
                 
                 <li class="menu-item">
                   <div class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg></div>
@@ -127,14 +132,14 @@
                   <div class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg></div>
                   <img src="/img/radiohead.jpg" alt="">
                   <div class="time"><p>0:00</p></div>
-                  <div class="song-name"><span>song 1</span></div>
+                  <div class="song-name"><span>song 2</span></div>
                 </li>
 
                 <li class="menu-item">
                   <div class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z"/></svg></div>
                   <img src="/img/radiohead.jpg" alt="">
                   <div class="time"><p>0:00</p></div>
-                  <div class="song-name"><span>song 1</span></div>
+                  <div class="song-name"><span>song 3</span></div>
                 </li>
 
                 
@@ -142,6 +147,7 @@
         </div>
       </div>
     
+            <audio id="audioPlayer"></audio>
       
             
     <br><br><br><br><br><br><br><br>
