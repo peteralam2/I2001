@@ -92,3 +92,4 @@ btn.addEventListener('click', function handleClick() {
 
   btn.innerHTML = `<span style="background-color: salmon">Button clicked<span>`;
 });
+

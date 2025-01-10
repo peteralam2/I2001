@@ -23,24 +23,56 @@
      
             
 
-        <div class="theme">
-            <p>Theme: </p>
-            <button id="theme" onchange="changeTheme()"">Dark</button>
+        <div class="btn">
+            <p>Dark Mode: </p>
+            <input type="checkbox" id="switch"/>
+            <label for="switch" id="theme" onchange="changeTheme()"">Toggle</label>
+            <p style="opacity: 0.5;">switch to dark mode</p>
         </div>
+        
         <br>
-        <div class="setting">
-            <label for="volume">Volume:</label>
-            <input class="slider" type="range" id="volume" min="0" max="100" value="50" oninput="updateVolume(this.value)">
-            <span id="volumeValue">50</span>
+
+        
+        <div class="btn">
+            <p>Notifications: </p>
+            <input type="checkbox" id="switch2"/>
+            <label for="switch2">Toggle</label>
+            <p style="opacity: 0.5;">recieve notifications of the most recent updates</p>
+            
         </div>
-        <br>
-        <div class="setting">
-            <label for="notifications" ><span class="slider-icon">🔔</span><span class="slider-text">Notifications</span></label>
-            <input type="checkbox" id="notifications" onchange="toggleNotifications()">
+
+        <div class="select-drop">
+            <p>Audio quality: </p>
+            <label class="select">
+                <select>
+                <option value="1">64 kbps</option>
+                <option value="2">128 kbps</option>
+                <option value="3">192 kbps</option>
+                <option value="4">256 kbps</option>
+                <option value="5">320 kbps</option>
+                </select>
+            </label>
+            <p style="opacity: 0.5;">change the audio's quality</p>
         </div>
+
         <br>
+
+        <div class="select-drop">
+            <p>Video quality: </p>
+            <label class="select">
+                <select>
+                <option value="1">360p</option>
+                <option value="2">480p</option>
+                <option value="3">720p60</option>
+                <option value="4">1080p60 (HD)</option>
+                </select>
+            </label>
+            <p style="opacity: 0.5;">change the video's quality</p>
+        </div>
+
+        <br><br>    
         <div class="documentation">
-            <p>Website's documentatiom: <a href="/README.html">Click here!</a></p>
+            <p>Website's documentatiom: <a href="/README.html">Click here to know more about the website!</a></p>
             
         </div>
         <br>    

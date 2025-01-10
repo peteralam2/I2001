@@ -40,223 +40,6 @@ body {
     background:var(--background-color); /* Container background color */
     padding: 24px;
 }
-
-
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--text-color);
-}
-
-input[type="range"] {
-    width: 100%;
-    background: #3A3F58; /* Range background color */
-    border-radius: 5px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: var(--accent-color); /* Thumb color */
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-input[type="range"]::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    background: var(--accent-color); /* Thumb color */
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    background-color: var(--background-color); /* Button background color */
-    color: var(--text-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: box-shadow background 0.3s ease; 
-    box-shadow: 
-                0 0 8px rgba(255, 255, 255, 0.6), /* First inner glow */
-                0 0 16px rgba(255, 255, 255, 0.5), /* Outer glow */
-                0 0 24px rgba(255, 255, 255, 0.4); /* Distant glow */
-}
-
-button:hover {
-    background-color: var(--accent-color); /* Button hover color */
-    box-shadow: /* slightly enhence the shadows on hover*/
-                0 0 12px rgba(255, 255, 255, 0.8), 
-                0 0 20px rgba(255, 255, 255, 0.7), 
-                0 0 32px rgba(255, 255, 255, 0.6);
-    transform: translateY(-2px) ;
-}
-
-input[type="checkbox"] {
-    margin-left: 10px;
-}
-
-#volumeValue {
-    color: var(--text-color);
-    margin-left: 10px;
-}
-
-
-.btn-div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    box-shadow: 20px whitesmoke;
-}
-
-.btn-div button{
-  padding: 12px;
-  margin: 10px;
-  width: 100%;
-}
-
-/* Style the slider container */
-.slider {
-    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
-    appearance: none;
-    width: 100%;
-    height: 12px;
-    background: #ddd; /* Light gray background */
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    
-  }
-  
-  /* Style the slider handle */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background: #4CAF50; /* Green color */
-    border-radius: 50%; /* Circular thumb */
-    cursor: pointer;
-    transition: background 0.3s ease;
-    
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    background: #816E9D;
-    border-radius: 50%;
-    cursor: pointer;
-    
-  }
-  
-  .slider:focus {
-    outline: none; /* Remove focus outline */
-  }
-  
-  /* Change the slider background on hover */
-  .slider:hover {
-    background: #ccc; /* Darker gray on hover */
-  }
-  
-  /* Active state */
-  .slider:active::-webkit-slider-thumb {
-    background: #816E9D; /* Darker green when active */
-  }
-  
-  /* Notification container */
-.notification-container {
-    display: inline-block;
-    width: 120px;
-    height: 40px;
-    position: relative;
-    background-color: #ccc;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Hide the checkbox */
-  .notification-container input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider button */
-  .notification-slider {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Bell icon styling */
-  .slider-icon {
-    font-size: 20px;
-    color: #fff;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Text styling */
-  .slider-text {
-    font-size: 14px;
-    color: white;
-    opacity: 0.8;
-  }
-  
-  /* Change the background when checkbox is checked */
-  .notification-container input:checked + .notification-slider {
-    transform: translateX(60px); /* Move the slider to the right */
-    background-color: #816E9D; /* Green background */
-  }
-  
-  /* When checked, grow the bell icon and change text color */
-  .notification-container input:checked + .notification-slider .slider-icon {
-    transform: scale(1.2); /* Grow the bell */
-  }
-  
-  .notification-container input:checked + .notification-slider .slider-text {
-    color: #fff; /* Change text color to white */
-    opacity: 1; /* Make text fully opaque */
-  }
-  
-  /* Optional: Hover effect */
-  .notification-container:hover {
-    background-color: #816E9D; 
-  }
-
-  .setting input[type="checkbox"] { /* hide the original checkbox*/
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-
-  .settings-text{
-    text-align: center;
-  }
-
-  .theme{
-    display: flex;
-    
-  }
-
-  .theme button{
-    padding: 4px 12px;
-    margin-left: 12px;
-  }
-
   .back{
     display: flex;
     gap: 12px;
@@ -265,3 +48,143 @@ input[type="checkbox"] {
   .back svg{
     fill:var(--text-color);
   }
+
+  .settings-text{
+    padding: 12px;
+  }
+
+
+  .btn input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  .btn label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 80px;
+    height: 40px;
+    background: grey;
+    display: block;
+    border-radius: 40px;
+    position: relative;
+  }
+  
+  .btn label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background: var(--background-color);
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+  
+  .btn input:checked + label {
+    background: var(--accent-color);
+  }
+  
+  .btn input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  
+  .btn label:active:after {
+    width: 100px;
+  }
+
+  .btn{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn p{
+    padding: 12px;
+  }
+
+  .select-drop{
+    display: flex;
+    flex-direction: row ;
+  }
+
+  .select-drop p{
+    padding: 32px 8px;
+  }
+
+
+  select {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    background: none;
+    color: inherit;
+    box-shadow: none;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: min(20rem, 90vw);
+    background: var(--nav-color);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    margin-top:18px;
+  }
+    select {
+      flex: 1;
+      padding: 18px;
+      cursor: pointer;
+    }
+    
+    .select::after {
+      content: "\25BC";
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      transition: 1s all ease;
+      pointer-events: none; 
+    }
+   
+    .select:hover::after {
+      color: var(--shadow-color);
+      animation: bounce 0.5s infinite;
+    }
+  
+  @keyframes bounce {
+    25% {
+      transform: translatey(5px);
+    }
+    75% {
+      transform: translatey(-5px);
+    }
+  }
+
+  .documentation a{
+    color: var(--text-color);
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
+  .btn-div button{
+    padding: 16px;
+    margin: 0 150px 0 0;
+    background-color: var(--shadow-color);
+    border-color: var(--semi-transparent);
+    border-radius: 20px;
+    cursor: pointer;
+    
+  }
+
+  .btn-div button:hover{
+    background-color: var(--nav-color);
+    color: var(--semi-transparent);
+    border-color: var(--shadow-color);
+    scale: 1.05;
+  }
+  
