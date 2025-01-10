@@ -68,7 +68,7 @@ body {
     background: grey;
     display: block;
     border-radius: 40px;
-    position: relative;
+    position: relative; 
   }
   
   .btn label:after {
@@ -99,10 +99,18 @@ body {
   .btn{
     display: flex;
     flex-direction: row;
+    gap:10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
   }
 
   .btn p{
     padding: 12px;
+  }
+
+  .main-txt{
+    width: 120px;
   }
 
   .select-drop{
@@ -187,4 +195,6 @@ body {
     border-color: var(--shadow-color);
     scale: 1.05;
   }
+
+
   
