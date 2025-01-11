@@ -151,7 +151,7 @@
           }
           
           .list-of-genres{
-           height:400px;
+           height:500px;
            display: flex;
            flex-wrap: nowrap;
            justify-content: start;
@@ -161,7 +161,7 @@
           }
           
           .genre{
-            width: 300px;
+            width: 350px;
             overflow: hidden;
             border-radius: 20px;
             border: 1px solid var(--base-variant);
@@ -169,7 +169,7 @@
             cursor:pointer;
             display: flex;
             align-items: flex-end;
-            margin: 8px;
+            margin: 16px;
             background-position: center; 
             background-size: cover; 
             background-repeat: no-repeat; 
@@ -192,7 +192,7 @@
             flex-direction: column;
             overflow: hidden;
             height: 30px;
-            width: 325px;
+            width: 400px;
             opacity: 1;
             margin-left: 10px;
           }
@@ -403,6 +403,10 @@
         .artist[for="d5"] {
           background-image: url('/img/Ziad_rahbani.jpg');
         }
+        .artist[for="d6"] {
+          background-image: url('/img/eminem.jpg');
+        }
+
 
         .toggle-hover {
           position: relative;
