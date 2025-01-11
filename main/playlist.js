@@ -61,6 +61,30 @@ let songs = [
         artist:'Mohammed and Mohab',
         cover:'/img/mohamedandmohab.jpeg',
     },
+    {
+        name:'strobe',
+        path:'/music/deadmau5 - Strobe_1736627133071.mp3',
+        artist:'deadmau5',
+        cover:'/img/Deadmau5.jpeg', 
+    },
+    {
+        name:'One more time',
+        path:'/music/Daft Punk - One More Time (Official Audio)_1736627173707.mp3',
+        artist:'Daft Punk',
+        cover:'/img/Daft punk.jpeg', 
+    },
+    {
+        name:'Levitating',
+        path:'/music/Dua Lipa - Levitating Featuring DaBaby (Official Music Video)_1736627218650.mp3',
+        artist:'Dua Lipa',
+        cover:'/img/dua lipa.jpeg', 
+    },
+    {
+        name:'Blinding Lights',
+        path:'/music/The Weeknd - Blinding Lights (Official Video)_1736627251966.mp3',
+        artist:'The Weeknd',
+        cover:'/img/The Weeknd.jpeg', 
+    },
 ]
 
 
