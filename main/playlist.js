@@ -38,7 +38,7 @@ let songs = [
         cover: '/img/tvgirl.jpeg'
     },
     {
-        name: 'Shut up my mom\' calling',
+        name: 'Shut up my mom\'s calling',
         path: '/music/Hotel Ugly - Shut Up My Moms Calling (Lyrics)_1736599945036.mp3',
         artist: 'hotel ugly',
         cover: '/img/hotelugly.jpeg'
