@@ -1,4 +1,4 @@
-const { path } = require("express/lib/application");
+
 
 let songs = [
     {
@@ -15,51 +15,51 @@ let songs = [
     },
     {
         name: 'for your eyes only',
-        path: '/music/ your eyes only (rap).mpgas/.mp3',
+        path: '/music/J. Cole - 4 Your Eyes Only [Explicit]_1736599757231.mp3',
         artist: 'J.cole',
         cover: '/img/j.cole.jpg'
     },
     {
         name: 'A little while',
-        path: 'assets/musics/Song 4.mp3',
+        path: '/music/A Little While_1736599782727.mp3',
         artist: 'Yellow Days',
         cover: '/img/yellow days.jpeg'
     },
     {
         name: 'Drive slow (instrumental)',
-        path: 'assets/musics/Song 5.mp3',
+        path: '/music/Paul Wall - Drive Slow (Instrumental)_1736599863292.mp3',
         artist: 'Paul Wall',
         cover: '/img/paul wall.jpeg'
     },
     {
         name: 'Lovers Rock',
-        path: 'assets/musics/Song 6.mp3',
+        path: '/music/TV Girl - Lovers Rock (Lyrics)_1736599924330.mp3',
         artist: 'TV girl',
         cover: '/img/tvgirl.jpeg'
     },
     {
         name: 'Shut up my mom\' calling',
-        path: 'assets/musics/Song 7.mp3',
+        path: '/music/Hotel Ugly - Shut Up My Moms Calling (Lyrics)_1736599945036.mp3',
         artist: 'hotel ugly',
         cover: '/img/hotelugly.jpeg'
     },
     {
         name: 'Sofa king',
-        path: 'assets/musics/Song 8.mp3',
+        path: '/music/Royel Otis - Sofa King (Official Music Video)_1736600011909.mp3',
         artist: 'Royal otis',
         cover: '/img/royalotis.webp'
     },
     {
-        name:'',
-        path:'',
-        artist:'',
-        cover:'',
+        name:'A Girl Within My Soul',
+        path:'/music/Abdulrahman&Mohab-A Girl Within My Soul بروحي فتاة-عبدالرحمن محمد ومهاب عمر_1717969071304.mp3',
+        artist:'Mohammed and Mohab',
+        cover:'/img/mohamedandmohab.jpeg',
     },
     {
-        name:'',
-        path:'',
-        artist:'',
-        cover:'',
+        name:'Crazyness',
+        path:'/music/Abdulrahman Mohammed&Mohab Omer - Craziness مهاب عمر و عبدالرحمن محمد-أصابك عشق_1734717907705.mp3',
+        artist:'Mohammed and Mohab',
+        cover:'/img/mohamedandmohab.jpeg',
     },
 ]
 
