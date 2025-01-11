@@ -1,3 +1,5 @@
+const { path } = require("express/lib/application");
+
 let songs = [
     {
         name: 'Bohemian Rhapsody',
@@ -12,40 +14,52 @@ let songs = [
         cover: '/img/radiohead.jpg'
     },
     {
-        name: 'song 3',
-        path: 'assets/musics/Song 3.mp3',
-        artist: 'artist 3',
-        cover: 'assets/images/cover 3.png'
+        name: 'for your eyes only',
+        path: '/music/ your eyes only (rap).mpgas/.mp3',
+        artist: 'J.cole',
+        cover: '/img/j.cole.jpg'
     },
     {
-        name: 'song 4',
+        name: 'A little while',
         path: 'assets/musics/Song 4.mp3',
-        artist: 'artist 4',
-        cover: 'assets/images/cover 4.png'
+        artist: 'Yellow Days',
+        cover: '/img/yellow days.jpeg'
     },
     {
-        name: 'song 5',
+        name: 'Drive slow (instrumental)',
         path: 'assets/musics/Song 5.mp3',
-        artist: 'artist 5',
-        cover: 'assets/images/cover 5.png'
+        artist: 'Paul Wall',
+        cover: '/img/paul wall.jpeg'
     },
     {
-        name: 'song 6',
+        name: 'Lovers Rock',
         path: 'assets/musics/Song 6.mp3',
-        artist: 'artist 6',
-        cover: 'assets/images/cover 6.png'
+        artist: 'TV girl',
+        cover: '/img/tvgirl.jpeg'
     },
     {
-        name: 'song 7',
+        name: 'Shut up my mom\' calling',
         path: 'assets/musics/Song 7.mp3',
-        artist: 'artist 7',
-        cover: 'assets/images/cover 7.png'
+        artist: 'hotel ugly',
+        cover: '/img/hotelugly.jpeg'
     },
     {
-        name: 'song 8',
+        name: 'Sofa king',
         path: 'assets/musics/Song 8.mp3',
-        artist: 'artist 8',
-        cover: 'assets/images/cover 8.png'
+        artist: 'Royal otis',
+        cover: '/img/royalotis.webp'
+    },
+    {
+        name:'',
+        path:'',
+        artist:'',
+        cover:'',
+    },
+    {
+        name:'',
+        path:'',
+        artist:'',
+        cover:'',
     },
 ]
 
