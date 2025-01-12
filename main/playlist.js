@@ -1,5 +1,3 @@
-
-
 let songs = [
     {
         name: 'Bohemian Rhapsody',
@@ -15,75 +13,68 @@ let songs = [
     },
     {
         name: 'for your eyes only',
-        path: '/music/J. Cole - 4 Your Eyes Only [Explicit]_1736599757231.mp3',
-        artist: 'J.cole',
+        path: '/music/4_ur_eyes_only.mp3',
+        artist: 'J. Cole',
         cover: '/img/j.cole.jpg'
     },
     {
-        name: 'A little while',
-        path: '/music/A Little While_1736599782727.mp3',
-        artist: 'Yellow Days',
-        cover: '/img/yellow days.jpeg'
+        name: 'Drive slow',
+        path: '/music/drive_slow.mp3',
+        artist: 'Kanye West',
+        cover: '/img/kanyewest.jpg'
     },
     {
-        name: 'Drive slow (instrumental)',
-        path: '/music/Paul Wall - Drive Slow (Instrumental)_1736599863292.mp3',
-        artist: 'Paul Wall',
-        cover: '/img/paul wall.jpeg'
+        name: 'Bala Wala Chi',
+        path: '/music/bala_wala_chi.mp3',
+        artist: 'Ziad Rahbani',
+        cover: '/img/Ziad_rahbani.jpg'
     },
+    {
+        name: 'Ya Ana Ya Ana',
+        path: '/music/ya_ana_ya_ana.mp3',
+        artist: 'Fayrouz',
+        cover: '/img/fayrouz.png'
+    },
+    
+    {
+        name: 'A little while',
+        path: '/music/a_little_while.mp3',
+        artist: 'Yellow Days',
+        cover: '/img/yellow_days.jpeg'
+    },
+    
     {
         name: 'Lovers Rock',
-        path: '/music/TV Girl - Lovers Rock (Lyrics)_1736599924330.mp3',
+        path: '/music/lovers_rock.mp3',
         artist: 'TV girl',
         cover: '/img/tvgirl.jpeg'
     },
+    
+    
     {
-        name: 'Shut up my mom\'s calling',
-        path: '/music/Hotel Ugly - Shut Up My Moms Calling (Lyrics)_1736599945036.mp3',
-        artist: 'hotel ugly',
-        cover: '/img/hotelugly.jpeg'
+        name:'Innerbloom',
+        path:'/music/Innerbloom.mp3',
+        artist:'RÜFÜS DU SOL',
+        cover:'/img/innerbloom.jpg',
     },
     {
-        name: 'Sofa king',
-        path: '/music/Royel Otis - Sofa King (Official Music Video)_1736600011909.mp3',
-        artist: 'Royal otis',
-        cover: '/img/royalotis.webp'
+        name:'On My Knees',
+        path:'/music/on_my_knees.mp3',
+        artist:'RÜFÜS DU SOL',
+        cover:'/img/innerbloom.jpg',
+    },
+
+    {
+        name:'Beat It',
+        path:'/music/beat_it.mp3',
+        artist:'Michael Jackson',
+        cover:'/img/michael_jackson.jpeg',
     },
     {
-        name:'A Girl Within My Soul',
-        path:'/music/Abdulrahman&Mohab-A Girl Within My Soul بروحي فتاة-عبدالرحمن محمد ومهاب عمر_1717969071304.mp3',
-        artist:'Mohammed and Mohab',
-        cover:'/img/mohamedandmohab.jpeg',
-    },
-    {
-        name:'Crazyness',
-        path:'/music/Abdulrahman Mohammed&Mohab Omer - Craziness مهاب عمر و عبدالرحمن محمد-أصابك عشق_1734717907705.mp3',
-        artist:'Mohammed and Mohab',
-        cover:'/img/mohamedandmohab.jpeg',
-    },
-    {
-        name:'strobe',
-        path:'/music/deadmau5 - Strobe_1736627133071.mp3',
-        artist:'deadmau5',
-        cover:'/img/Deadmau5.jpeg', 
-    },
-    {
-        name:'One more time',
-        path:'/music/Daft Punk - One More Time (Official Audio)_1736627173707.mp3',
-        artist:'Daft Punk',
-        cover:'/img/Daft punk.jpeg', 
-    },
-    {
-        name:'Levitating',
-        path:'/music/Dua Lipa - Levitating Featuring DaBaby (Official Music Video)_1736627218650.mp3',
-        artist:'Dua Lipa',
-        cover:'/img/dua lipa.jpeg', 
-    },
-    {
-        name:'Blinding Lights',
-        path:'/music/The Weeknd - Blinding Lights (Official Video)_1736627251966.mp3',
-        artist:'The Weeknd',
-        cover:'/img/The Weeknd.jpeg', 
+        name:'Girls Like You',
+        path:'/music/girls_like_you.mp3',
+        artist:'Maroon 5 ft. Cardi B',
+        cover:'/img/maroon5.jpg',
     },
 ]
 
@@ -109,6 +100,7 @@ musicPlayerSection.addEventListener('click', () => {
     }, 250);
 })
 
+
 /////// back from music player
 
 const backToHomeBtn = document.querySelector('.music-player-section .back-btn');
@@ -118,23 +110,103 @@ backToHomeBtn.addEventListener('click', () => {
 })
 
 //////// access playlist
+var playlistSection;
+var backToMusicPlayer;
 
-const playlistSection = document.querySelector('.playlist');
 const navBtn = document.querySelector('.music-player-section .nav-btn');
+const rock_playlist = document.querySelector('#c1');
+const rap_playlist = document.querySelector('#c2');
+const arabic_playlist = document.querySelector('#c3');
+const indie_playlist = document.querySelector('#c4');
+const electronic_playlist = document.querySelector('#c5');
+const pop_playlist = document.querySelector('#c6');
 
-navBtn.addEventListener('click', () => {
-    playlistSection.classList.add('active');
-})
+rock_playlist.addEventListener('click', () => {
+    playlistSection = document.querySelector('.playlist');
+    setMusic(0);
 
-////////// back from playlist to music player
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
 
-const backToMusicPlayer = document.querySelector('.playlist .back-btn');
+    backToMusicPlayer = document.querySelector('.playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
 
-backToMusicPlayer.addEventListener('click', () => {
-    playlistSection.classList.remove('active');
-})
+rap_playlist.addEventListener('click', () => {
 
-//////navigation done ////////////////
+    playlistSection = document.querySelector('.rap-playlist');
+    setMusic(2);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.rap-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+arabic_playlist.addEventListener('click', () => {
+
+    playlistSection = document.querySelector('.arabic-playlist');
+    setMusic(4);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.arabic-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+indie_playlist.addEventListener('click', () => {
+
+    playlistSection = document.querySelector('.indie-playlist');
+    setMusic(6);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.indie-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+electronic_playlist.addEventListener('click', () => {
+
+    playlistSection = document.querySelector('.electronic-playlist');
+    setMusic(8);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.electronic-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+pop_playlist.addEventListener('click', () => {
+
+    playlistSection = document.querySelector('.pop-playlist');
+    setMusic(10);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.pop-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+
+
 
 
 /////// music
@@ -165,7 +237,6 @@ const volumeSlider = document.querySelector('.volume-slider');
 
 
 // funtion for setting up music
-
 const setMusic = (i) => {
     seekBar.value = 0;
     let song = songs[i];
@@ -181,10 +252,15 @@ const setMusic = (i) => {
         seekBar.max = music.duration;
         musicDuration.innerHTML = formatTime(music.duration);
     }, 300);
+
     currentMusicTime.innerHTML = '00 : 00';
     queue.forEach(item => item.classList.remove('active'));
     queue[currentMusic].classList.add('active');
-}
+};
+
+// Add the click event listener
+
+
 
 setMusic(0);
 
