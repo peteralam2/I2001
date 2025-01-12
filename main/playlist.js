@@ -124,6 +124,8 @@ const pop_playlist = document.querySelector('#c6');
 rock_playlist.addEventListener('click', () => {
     playlistSection = document.querySelector('.playlist');
     setMusic(0);
+    playBtn.classList.add('active');
+    pauseBtn.classList.remove('active');
 
     navBtn.addEventListener('click', () => {
         playlistSection.classList.add('active');
@@ -139,6 +141,8 @@ rap_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.rap-playlist');
     setMusic(2);
+    playBtn.classList.add('active');
+    pauseBtn.classList.remove('active');
     navBtn.addEventListener('click', () => {
         playlistSection.classList.add('active');
     })
@@ -153,6 +157,9 @@ arabic_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.arabic-playlist');
     setMusic(4);
+    playBtn.classList.add('active');
+    pauseBtn.classList.remove('active');
+    
     navBtn.addEventListener('click', () => {
         playlistSection.classList.add('active');
     })
@@ -167,6 +174,9 @@ indie_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.indie-playlist');
     setMusic(6);
+    playBtn.classList.add('active');
+    pauseBtn.classList.remove('active');
+
     navBtn.addEventListener('click', () => {
         playlistSection.classList.add('active');
     })
@@ -181,6 +191,9 @@ electronic_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.electronic-playlist');
     setMusic(8);
+    playBtn.classList.add('active');
+    pauseBtn.classList.remove('active');
+
     navBtn.addEventListener('click', () => {
         playlistSection.classList.add('active');
     })
@@ -195,6 +208,9 @@ pop_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.pop-playlist');
     setMusic(10);
+    playBtn.classList.add('active');
+    pauseBtn.classList.remove('active');
+    
     navBtn.addEventListener('click', () => {
         playlistSection.classList.add('active');
     })
