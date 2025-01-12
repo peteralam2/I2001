@@ -487,16 +487,6 @@
           padding-top: 100px;
       }
       
-      @media (max-width: 768px) {
-          .slide {
-              flex-direction: column;
-          }
-      
-          .slide img, .slide-text {
-              max-width: 90%;
-          }
-      }
-      
       .slider-controls {
           position: absolute;
           top: 50%;
@@ -941,7 +931,9 @@
         text-transform: capitalize;
     }
 
-
+    .top-bar{
+      display: none;
+    }
 
     @media screen and (min-width: 200px) and (max-width: 430px) {
 
@@ -957,7 +949,7 @@
       }
 
       .list-of-genres{
-        height:300px;
+        height:350px;
         flex-direction: column;
         width: 100%;
        }
@@ -1062,6 +1054,100 @@
   overflow: hidden;
   opacity: 0;
   display: none;
+}
+
+.slider-container {
+  max-height: 200px;
+}
+
+
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slide img {
+  height: 150px;
+  width: 100px;
+}
+
+.slide-text {
+  height: 100% ;
+  padding: 5px 10px;
+  font-size: 0.6rem;
+  padding-top: 0;
+}
+.control-btn {
+  padding: 5px 10px;
+
+}
+
+.top-bar{
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: var(--nav-color);
+}
+
+.image-container {
+  padding-top: 0;
+  justify-content: left;
+  align-items: left;
+  display: flex;
+  gap: 0;
+}
+
+.user-info {
+  border-bottom: none;
+  position:absolute;
+  width: 100%;
+  text-align: left;
+  padding: 0 0 0 45px ;
+}
+
+.usersubs {
+  font-size: 8px;
+  font-weight: lighter;
+  margin: 10px 0 5px;
+}
+
+.uemail {
+  font-size: 10px;
+  color: #888;
+}
+
+.profile-img{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: pulse 4s infinite ease-in-out;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-settings{
+  position: relative;
+  bottom:30px;
+  left: 90%;
+
+}
+.titles{
+  margin-left: 1%;
+  padding: 32px 0;
+  display: flex;
 }
     
      
