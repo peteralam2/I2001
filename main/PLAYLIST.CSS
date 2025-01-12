@@ -1,0 +1,179 @@
+:root {
+    --background-color: #F8F8FF;
+    --nav-color: #CDC1FF;
+    --text-color: #000;
+    --accent-color: linear-gradient(to bottom, #A294F9, #E5D9F2);
+    --shadow-color: #CDC1FF;
+    --semi-transparent: rgba(162, 148, 249, 0.5);
+    --line-color: rgba(0, 0, 0, 0.4);
+}
+
+.darkmode {
+    --background-color: #1D203E;
+    --nav-color: #2C2F48;
+    --text-color: #fff;
+    --accent-color: linear-gradient(to bottom, #5E4E91, #816E9D);
+    --shadow-color: #816E9D;
+    --semi-transparent: rgba(129, 110, 157, 0.5);
+    --line-color: rgba(255, 255, 255, 0.4);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.list-of-genres {
+    display: flex;
+    flex-direction: column;
+}
+
+.genre {
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    position: relative;
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.genre .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.queue {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--line-color);
+    cursor: pointer;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    position: relative;
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.queue.active {
+    background-color: var(--semi-transparent);
+}
+
+.queue-cover {
+    position: relative;
+    margin-right: 10px;
+}
+
+.queue-cover img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.queue-cover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color);
+    font-size: 1.5em;
+}
+
+.queue .name {
+    font-size: 1.2em;
+    transition: opacity 0.3s, transform 0.3s ease; /* Smooth fade and movement */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Ensure text doesn't overflow */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+/* Hover effects */
+.genre:hover {
+    background-color: var(--semi-transparent);
+}
+
+.queue:hover {
+    background-color: var(--semi-transparent);
+}
+
+/* Text Hover Effect */
+.genre:hover .name, .queue:hover .name {
+    transform: translateX(10px); /* Slight movement for the text */
+    opacity: 0.9; /* Slight transparency on hover */
+}
+
+/* Ensuring text visibility on hover */
+.genre:hover .name, .queue:hover .name {
+    color: var(--text-color); /* Keep text color the same on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em; /* Smaller title on smaller screens */
+    }
+
+    .container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    .genre, .queue {
+        padding: 10px; /* Less padding for genres and queues */
+    }
+
+    .queue-cover img {
+        width: 40px; /* Smaller cover image */
+        height: 40px; /* Smaller cover image */
+    }
+
+    .queue .name {
+        font-size : 1em; /* Smaller font size for names */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5em; /* Even smaller title for very small screens */
+    }
+
+    .container {
+        padding: 5px; /* Minimal padding on very small screens */
+    }
+
+    .genre, .queue {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .queue-cover {
+        margin-bottom: 5px; /* Space between cover and name */
+    }
+
+    .queue .name {
+        font-size: 0.9em; /* Further reduce font size */
+    }
+} 
