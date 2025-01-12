@@ -221,7 +221,7 @@
             background-image: url('/img/rock.jpg');
           }
           .genre[for="c2"] {
-            background-image: url('/img/pop.jpg');
+            background-image: url('/img/hip-hop.jpg');
           }
           .genre[for="c3"] {
             background-image: url('/img/arabic.jpg');
@@ -233,7 +233,7 @@
             background-image: url('/img/electronic.jpg');
           }
           .genre[for="c6"] {
-            background-image: url('/img/hip-hop.jpg');
+            background-image: url('/img/pop.jpg');
           }
 
 
@@ -536,31 +536,7 @@
       }
 
 
-
-
-
-      :root{
-
-        --background-color: #F8F8FF ;
-        --nav-color: #CDC1FF;
-        --text-color: #000;
-        --accent-color: linear-gradient(to bottom, #A294F9, #E5D9F2);
-        --shadow-color: #CDC1FF;
-        --semi-transparent: rgba(162, 148, 249, 0.5);
-        --line-color: rgba(0, 0, 0, 0.4);
-      }
-      .darkmode{
-        --background-color: #1D203E;
-        --nav-color: #2C2F48;
-        --text-color: #fff;
-        --accent-color: linear-gradient(to bottom, #5E4E91, #816E9D);
-        --shadow-color: #816E9D;
-        --semi-transparent: rgba(129, 110, 157, 0.5);
-        --line-color: rgba(255, 255, 255, 0.4);
-      }
-    
-    
-    
+      /*music player section*/
     
     .music-player-section{
         margin-left: 15%;
@@ -757,7 +733,7 @@
     }
     
     
-    .playlist{
+    .playlist {
         width: 85%;
         height: 100%;
         position: fixed;
@@ -771,10 +747,146 @@
         margin-left: 20%;
     }
     
-    .playlist.active{
+    .playlist.active {
       margin-left: 20%;
       right: 0;
     }
+    .rap-playlist{
+      width: 85%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      padding: 30px 0;
+      background: var(--background-color  );
+      z-index: 3;
+      transition: 1s;
+      overflow: auto;
+      margin-left: 20%;
+    }
+
+    .rap-playlist.active{
+      margin-left: 20%;
+      right: 0;
+    }
+
+    .arabic-playlist{
+      width: 85%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      padding: 30px 0;
+      background: var(--background-color  );
+      z-index: 3;
+      transition: 1s;
+      overflow: auto;
+      margin-left: 20%;
+    }
+
+    .arabic-playlist.active{
+      margin-left: 20%;
+      right: 0;
+    }
+
+    .indie-playlist{
+      width: 85%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      padding: 30px 0;
+      background: var(--background-color  );
+      z-index: 3;
+      transition: 1s;
+      overflow: auto;
+      margin-left: 20%;
+    }
+
+    .indie-playlist.active{
+      margin-left: 20%;
+      right: 0;
+    }
+
+    .electronic-playlist{
+      width: 85%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      padding: 30px 0;
+      background: var(--background-color  );
+      z-index: 3;
+      transition: 1s;
+      overflow: auto;
+      margin-left: 20%;
+    }
+
+    .electronic-playlist.active{
+      margin-left: 20%;
+      right: 0;
+    }
+
+    .pop-playlist{
+      width: 85%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      padding: 30px 0;
+      background: var(--background-color  );
+      z-index: 3;
+      transition: 1s;
+      overflow: auto;
+      margin-left: 20%;
+    }
+
+    .pop-playlist.active{
+      margin-left: 20%;
+      right: 0;
+    }
+
+    .playlist h2{
+      text-align: center;
+      margin: 52px 0;
+    }
+
+    .indie-playlist h2{
+      text-align: center;
+      margin: 52px 0;
+    }
+
+    .rap-playlist h2{
+      text-align: center;
+      margin: 52px 0;
+    }
+    .arabic-playlist h2{
+      text-align: center;
+      margin: 52px 0;
+    }
+
+    .electronic-playlist h2{
+      text-align: center;
+      margin: 52px 0;
+    }
+    .pop-playlist h2{
+      text-align: center;
+      margin: 52px 0;
+    }
+
+    .playlist-img{
+      height: 300px;
+      width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px;
+      animation: pulse 10s infinite ease-in-out;
+    }
+
+
+
+
     
     .title{
         font-weight: 300;
@@ -828,6 +940,8 @@
         font-size: 22px;
         text-transform: capitalize;
     }
+
+
 
     @media screen and (min-width: 200px) and (max-width: 430px) {
 

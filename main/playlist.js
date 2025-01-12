@@ -1,5 +1,3 @@
-const { path } = require("express/lib/application");
-
 let songs = [
     {
         name: 'Bohemian Rhapsody',
@@ -15,51 +13,68 @@ let songs = [
     },
     {
         name: 'for your eyes only',
-        path: '/music/ your eyes only (rap).mpgas/.mp3',
-        artist: 'J.cole',
+        path: '/music/4_ur_eyes_only.mp3',
+        artist: 'J. Cole',
         cover: '/img/j.cole.jpg'
     },
     {
-        name: 'A little while',
-        path: 'assets/musics/Song 4.mp3',
-        artist: 'Yellow Days',
-        cover: '/img/yellow days.jpeg'
+        name: 'Drive slow',
+        path: '/music/drive_slow.mp3',
+        artist: 'Kanye West',
+        cover: '/img/kanyewest.jpg'
     },
     {
-        name: 'Drive slow (instrumental)',
-        path: 'assets/musics/Song 5.mp3',
-        artist: 'Paul Wall',
-        cover: '/img/paul wall.jpeg'
+        name: 'Bala Wala Chi',
+        path: '/music/bala_wala_chi.mp3',
+        artist: 'Ziad Rahbani',
+        cover: '/img/Ziad_rahbani.jpg'
     },
+    {
+        name: 'Ya Ana Ya Ana',
+        path: '/music/ya_ana_ya_ana.mp3',
+        artist: 'Fayrouz',
+        cover: '/img/fayrouz.png'
+    },
+    
+    {
+        name: 'A little while',
+        path: '/music/a_little_while.mp3',
+        artist: 'Yellow Days',
+        cover: '/img/yellow_days.jpeg'
+    },
+    
     {
         name: 'Lovers Rock',
-        path: 'assets/musics/Song 6.mp3',
+        path: '/music/lovers_rock.mp3',
         artist: 'TV girl',
         cover: '/img/tvgirl.jpeg'
     },
+    
+    
     {
-        name: 'Shut up my mom\' calling',
-        path: 'assets/musics/Song 7.mp3',
-        artist: 'hotel ugly',
-        cover: '/img/hotelugly.jpeg'
+        name:'Innerbloom',
+        path:'/music/Innerbloom.mp3',
+        artist:'RÜFÜS DU SOL',
+        cover:'/img/innerbloom.jpg',
     },
     {
-        name: 'Sofa king',
-        path: 'assets/musics/Song 8.mp3',
-        artist: 'Royal otis',
-        cover: '/img/royalotis.webp'
+        name:'On My Knees',
+        path:'/music/on_my_knees.mp3',
+        artist:'RÜFÜS DU SOL',
+        cover:'/img/innerbloom.jpg',
+    },
+
+    {
+        name:'Beat It',
+        path:'/music/beat_it.mp3',
+        artist:'Michael Jackson',
+        cover:'/img/michael_jackson.jpeg',
     },
     {
-        name:'',
-        path:'',
-        artist:'',
-        cover:'',
-    },
-    {
-        name:'',
-        path:'',
-        artist:'',
-        cover:'',
+        name:'Girls Like You',
+        path:'/music/girls_like_you.mp3',
+        artist:'Maroon 5 ft. Cardi B',
+        cover:'/img/maroon5.jpg',
     },
 ]
 
@@ -85,6 +100,7 @@ musicPlayerSection.addEventListener('click', () => {
     }, 250);
 })
 
+
 /////// back from music player
 
 const backToHomeBtn = document.querySelector('.music-player-section .back-btn');
@@ -94,23 +110,103 @@ backToHomeBtn.addEventListener('click', () => {
 })
 
 //////// access playlist
+var playlistSection;
+var backToMusicPlayer;
 
-const playlistSection = document.querySelector('.playlist');
 const navBtn = document.querySelector('.music-player-section .nav-btn');
+const rock_playlist = document.querySelector('#c1');
+const rap_playlist = document.querySelector('#c2');
+const arabic_playlist = document.querySelector('#c3');
+const indie_playlist = document.querySelector('#c4');
+const electronic_playlist = document.querySelector('#c5');
+const pop_playlist = document.querySelector('#c6');
 
-navBtn.addEventListener('click', () => {
-    playlistSection.classList.add('active');
-})
+rock_playlist.addEventListener('click', () => {
+    playlistSection = document.querySelector('.playlist');
+    setMusic(0);
 
-////////// back from playlist to music player
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
 
-const backToMusicPlayer = document.querySelector('.playlist .back-btn');
+    backToMusicPlayer = document.querySelector('.playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
 
-backToMusicPlayer.addEventListener('click', () => {
-    playlistSection.classList.remove('active');
-})
+rap_playlist.addEventListener('click', () => {
 
-//////navigation done ////////////////
+    playlistSection = document.querySelector('.rap-playlist');
+    setMusic(2);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.rap-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+arabic_playlist.addEventListener('click', () => {
+
+    playlistSection = document.querySelector('.arabic-playlist');
+    setMusic(4);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.arabic-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+indie_playlist.addEventListener('click', () => {
+
+    playlistSection = document.querySelector('.indie-playlist');
+    setMusic(6);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.indie-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+electronic_playlist.addEventListener('click', () => {
+
+    playlistSection = document.querySelector('.electronic-playlist');
+    setMusic(8);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.electronic-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+pop_playlist.addEventListener('click', () => {
+
+    playlistSection = document.querySelector('.pop-playlist');
+    setMusic(10);
+    navBtn.addEventListener('click', () => {
+        playlistSection.classList.add('active');
+    })
+
+    backToMusicPlayer = document.querySelector('.pop-playlist .back-btn');
+    backToMusicPlayer.addEventListener('click', () => {
+        playlistSection.classList.remove('active');
+    })
+});
+
+
+
 
 
 /////// music
@@ -141,7 +237,6 @@ const volumeSlider = document.querySelector('.volume-slider');
 
 
 // funtion for setting up music
-
 const setMusic = (i) => {
     seekBar.value = 0;
     let song = songs[i];
@@ -157,10 +252,15 @@ const setMusic = (i) => {
         seekBar.max = music.duration;
         musicDuration.innerHTML = formatTime(music.duration);
     }, 300);
+
     currentMusicTime.innerHTML = '00 : 00';
     queue.forEach(item => item.classList.remove('active'));
     queue[currentMusic].classList.add('active');
-}
+};
+
+// Add the click event listener
+
+
 
 setMusic(0);
 
