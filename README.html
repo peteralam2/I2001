@@ -64,18 +64,20 @@
             line-height: 1.6;
         }
         figure {
-            margin: 20px 0;
+            margin: 1.5em auto;
             text-align: center;
+            max-width: 90%;   
         }
         figure img {
-            max-width: 80%;
+            max-width: 100%;
             height: auto;
-            border-radius: 8px;
+            border: 2px solid #ddd; 
         }
         figcaption {
-            margin-top: 10px;
             font-size: 0.9em;
-            color: #777;
+            color: #666; 
+            margin-top: 0.5em;
+            text-align: center;
         }
         .startUp, .main, .settings {
             display: grid;
@@ -90,7 +92,16 @@
             height: auto;
         }
         
-        /* Anchor styles */
+        @media (max-width: 768px) {
+            img {
+                max-width: 100%; 
+            }
+
+            figure {
+                padding: 0 1em; 
+            }
+        }
+        
         a.anchor {
             text-decoration: none;
             color: #333;
@@ -142,20 +153,26 @@
             Musify holds some feature that could be customized in the settings section:
             <ol type="I">
                 <li>
-                    <strong>Theme:</strong> The app can be used in both light and dark mode by clicking the button next to "Theme" in the settings page
+                    <strong>Theme:</strong> The app can be used in both light and dark mode by clicking the switch next to "Dark" in the settings page
                 </li>
                 <li>
-                    <strong>Notifications:</strong> Musify Notifications preferences can be updated by clicking on the bell icon in the settings page.
+                    <strong>Notifications:</strong> Musify Notifications preferences can be updated by clicking on the switch next to "Notifications" in the settings page.
                 </li>
                 <li>
                     <strong>Languages:</strong> Musify is mainly programmed in English language and does not support other translations 
                 </li>
                 <li>
-                    <strong>User Info:</strong> Any user informations can be found in the settings page (username - email address - full name)
+                    <strong>User Info:</strong> Any user informations can be found in the side bar(username - email address - Avatar)
                 </li>
                 <li>
                     <strong>Log in and Log out:</strong> The user can log in to the app at any point and is able to sign in by creating his own account.<br> 
                     In addition, the user can log out of the app by clicking the log out button "settings > log out"
+                </li>
+                <li>
+                    <strong>Data Saver:</strong> Save your data to enjoy the music offline by turn on the "Data saver" feature in the settings 
+                </li>
+                <li>
+                    <strong>Video and Audio Quality:</strong> Control your Audio and Video preferences in the settings 
                 </li>
                 <li>
                     <strong>Password Recovery:</strong> In case of lost password the user can request to change his password to regain access to the app using the "forget password?" button in the login page.
@@ -163,7 +180,7 @@
                 </li>
                 <li>
                     <strong>Notes:</strong> Musify contains some cool animations including one before opening the login page! (could refresh the page using F5 to see the animation &#128521;)<br>
-                    In addition this app is designed to be screen responsive!
+                    In addition this app is designed to be (partially) screen responsive! Make sure to click on the name of the genre to access the playlist!
                 </li>
             </ol>
         </article>
@@ -174,32 +191,44 @@
         <p class="subtitleUserGuide">In the following, All the infos needed for a smooth user experience</p>
         <div class="startUp">
             <figure>
-                <img src="" id="login" alt="login-page">
+                <img src="/img/documantationimg/login.jpg" id="login" alt="login-page">
                 <figcaption for="login">This is the login page, this includes 2 inputs the Email and the Password of the user in order to access the content of the app</figcaption>
             </figure>
             <figure>
-                <img src="" id="signUp" alt="sign-up">
+                <img src="/img/documantationimg/sign in.jpg" id="signUp" alt="sign-up">
                 <figcaption for="signUp">This is the sign up page, you will need to input your Full name along with the email you'd like to operate with for future password recovery as well as the password</figcaption>
             </figure>
         </div>
         <div class="main">
             <figure>
-                <img src="" id="mainPage" alt="main-page">
+                <img src="/img/documantationimg/main.jpg" id="mainPage" alt="main-page">
                 <figcaption for="mainPage">Above the main page of the app! It includes all the songs for you to enjoy splitted into 4 divisions Pop,Arabic,Rock,Indie<br>
             in addition this page includes some of the popular singers you might be interested in along with some news about them</figcaption>
             </figure>
             <figure>
-                <img src="" id="periferals" alt="periferals">
-                <figcaption for="periferals">On the right side and in the top of the screen you can see the different parts of the app in addition to the "search bar" and the icons of "settings" .... </figcaption>
+                <img src="/img/documantationimg/artist and slider.jpg" id="Artists and slider" alt="Artists">
+                <figcaption for="Artists and slider">The slider contains info of several Artists</figcaption>
             </figure>
             <figure>
-                <img src="" id="musicUx" alt="music-bar">
+                <img src="/img/documantationimg/side bar.jpg" id="periferals" alt="periferals">
+                <figcaption for="periferals">On the right side of the screen you can see the different parts of the app in addition to the settings button <br> The Avatar's shadow is animated </figcaption>
+            </figure>
+            <figure>
+                <img src="/img/documantationimg/Main song list.jpg" id="Main playlist" alt="main-playlist">
+                <figcaption>Make sure to double click on the "music bar" then double click the 4 points in the top left corner to access this page</figcaption>
+            </figure>
+            <figure>
+                <img src="/img/documantationimg/music player.jpg" id="musicUx" alt="music-bar">
                 <figcaption for="musicUx">This is the music bar where you will be able to shuffle between songs, stop/play the song as well as the ability to scrubble so that you can enjoy your favorite part of a song infinitly!</figcaption>
+           </figure>
+           <figure>
+                <img src="/img/documantationimg/playlist.jpg" id="playlist" alt="playlist">
+                <figcaption>To reach this page click on any Genre from the main</figcaption>
            </figure>
         </div>
         <div class="settings">
             <figure>
-                <img src="" id="settings" alt="settings-page">
+                <img src="/img/documantationimg/settings.jpg" id="settings" alt="settings-page">
                 <figcaption for="settings">Here is the settings page where all the features and customization are made including Theme change,Notifications preferences,Volume a save button and a log out button<br>
                 don't forget to click the save settings button in order to apply your changes</figcaption>
             </figure>
@@ -208,12 +237,12 @@
     
     <section class="developerGuide" id="developerGuide">
         <h2><a href="#top" class="anchor">Developer Guide</a></h2>
-        <p>Musify is consited of (...) pages: Login,sign-up,main,settings (....) <br> Each page has it's own HTML,CSS and JAVASCRIPT files where it is customized carefully for a good user experience</p>
+        <p>Musify is consited of 4 main pages: Login/sign-up,main,settings and Playlist <br> Each page has it's own HTML,CSS and JAVASCRIPT files where it is customized carefully for a good user experience</p>
         <p>VScode is the primary workplace of the students-developers</p>
         <p>All HTML,tags used in the base code each work as intended and all codes are written in a semantic format to reflect the neat and professionnal work the students-developers have made</p>
         <p>The CSS used in the pages is mainly flexbox format and that helped us create a screen responsive application that suits all types of screens</p>
         <p>CSS is also used in some animations and some shadowing especially for the buttons and the loding screen at the pre-login page!</p>
-        <p>JAVASCRIPT is mainly used in the settings, it helped us changing the theme for all the pages once applied by the user, as well as in the volume bar to display at what volume the user is pointing at in addition to the save button and the log out button that takes the user to the log in page!</p>
+        <p>JAVASCRIPT is widely used especially in the settings, it helped us changing the theme for all the pages once applied by the user, as well as in the volume bar to display at what volume the user is pointing at in addition to the save button and the log out button that takes the user to the log in page! As well as in the main page to swtich between the main , the music player and the list of songs</p>
         <p>JAVASCRIPT was also used to provide a safe use of the app by adding a firebase thus the user will not be able to operate in the application without signing in first </p>
         <p><strong>Git/GitHub was used in the making of this app in order to facilitate the work of the students-developers especially that it helped with the coordination and the easy feature manipulation</strong></p>
         <p id="notes"><b><i>Please note that in the production of Musify the students-developers were able to invest there time self-learning in addition to what was taught in class where they were able to use keyframes for animation and variables in CSS to adjust the theme of the application as well as the ability to make a firebase for safe use of the app </i></b></p>
