@@ -122,7 +122,9 @@ const electronic_playlist = document.querySelector('#c5');
 const pop_playlist = document.querySelector('#c6');
 
 rock_playlist.addEventListener('click', () => {
+    
     playlistSection = document.querySelector('.playlist');
+    playlistSection.classList.add('active');
     setMusic(0);
     playBtn.classList.add('active');
     pauseBtn.classList.remove('active');
@@ -140,6 +142,7 @@ rock_playlist.addEventListener('click', () => {
 rap_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.rap-playlist');
+    playlistSection.classList.add('active');
     setMusic(2);
     playBtn.classList.add('active');
     pauseBtn.classList.remove('active');
@@ -156,6 +159,7 @@ rap_playlist.addEventListener('click', () => {
 arabic_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.arabic-playlist');
+    playlistSection.classList.add('active');
     setMusic(4);
     playBtn.classList.add('active');
     pauseBtn.classList.remove('active');
@@ -173,6 +177,7 @@ arabic_playlist.addEventListener('click', () => {
 indie_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.indie-playlist');
+    playlistSection.classList.add('active');
     setMusic(6);
     playBtn.classList.add('active');
     pauseBtn.classList.remove('active');
@@ -190,6 +195,7 @@ indie_playlist.addEventListener('click', () => {
 electronic_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.electronic-playlist');
+    playlistSection.classList.add('active');
     setMusic(8);
     playBtn.classList.add('active');
     pauseBtn.classList.remove('active');
@@ -207,6 +213,7 @@ electronic_playlist.addEventListener('click', () => {
 pop_playlist.addEventListener('click', () => {
 
     playlistSection = document.querySelector('.pop-playlist');
+    playlistSection.classList.add('active');
     setMusic(10);
     playBtn.classList.add('active');
     pauseBtn.classList.remove('active');
