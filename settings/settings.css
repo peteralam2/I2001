@@ -34,6 +34,10 @@ body {
     overflow-x: hidden;
 }
 
+.settings-text{
+  text-align: center;
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -119,7 +123,8 @@ body {
   }
 
   .select-drop p{
-    padding: 32px 8px;
+    padding: 32px 0 0 10px;
+    width: 100px;
   }
 
 
@@ -127,7 +132,7 @@ body {
     appearance: none;
     border: 0;
     outline: 0;
-    background: none;
+    background: none; 
     color: inherit;
     box-shadow: none;
   }
@@ -196,5 +201,67 @@ body {
     scale: 1.05;
   }
 
+  @media screen and (min-width: 200px) and (max-width: 430px) {
+    body{
+      font-size: 12px;
+    }
+
+    .container{
+      padding: 12px;
+    }
+
+    .btn label {
+      width: 50px;
+      height: 25px;
+      border-radius: 25px;
+ 
+    }
+
+    .btn label:after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 15px;
+      height: 15px;
+      background: var(--background-color);
+      border-radius: 25px;
+  
+  
+  }
+
+  .btn{
+    display: flex;
+    flex-direction: row;
+    gap:0;
+    margin:0 20px 8px 0;
+  }
+
+  .main-txt{
+    width: 100px;
+  }
+
+  .select {
+    width: min(10rem, 45vw);
+    height: 50px;
+    margin-top:18px;
+  }
+  .btn-div button{
+    padding: 16px;
+    margin: 0 10px 0 0;
+    background-color: var(--shadow-color);
+    border-color: var(--semi-transparent);
+    border-radius: 20px;
+    cursor: pointer;
+    
+  }
+
+  .btn-div button:hover{
+    background-color: var(--nav-color);
+    color: var(--semi-transparent);
+    border-color: var(--shadow-color);
+    scale: 1.05;
+  }
+}
 
   

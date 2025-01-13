@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music App Settings</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="/settings/settings.css">
     
 </head>
 <body>
@@ -27,17 +27,14 @@
                 <p class="main-txt">Dark Mode: </p>
                 <input type="checkbox" id="switch" checked/>
                 <label for="switch" id="theme" onchange="changeTheme()"">Toggle</label>
-                <p style="opacity: 0.5;">switch to dark mode</p>
+                <p style="opacity: 0.5; width: 40%;">switch to dark mode</p>
             </div>
-            
-            
-    
-            
+                
             <div class="btn">
                 <p class="main-txt">Notifications: </p>
                 <input type="checkbox" id="switch2"/>
                 <label for="switch2">Toggle</label>
-                <p style="opacity: 0.5;">recieve notifications of the most recent updates</p>
+                <p style="opacity: 0.5; width: 40%;">recieve notifications of the most recent updates</p>
                 
             </div>
             
@@ -45,14 +42,14 @@
                 <p class="main-txt">Data saver: </p>
                 <input type="checkbox" id="switch3"/>
                 <label for="switch3">Toggle</label>
-                <p style="opacity: 0.5;">saves data when not connected to Wifi</p>
+                <p style="opacity: 0.5; width: 40%;">saves data when not connected to Wifi</p>
                 
             </div>
     
         </div>
 
         <div class="select-drop">
-            <p>Audio quality: </p>
+            <p class="main-txt">Audio quality: </p>
             <label class="select">
                 <select>
                 <option value="1">64 kbps</option>
@@ -68,7 +65,7 @@
         <br>
 
         <div class="select-drop">
-            <p>Video quality: </p>
+            <p class="main-txt">Video quality: </p>
             <label class="select">
                 <select>
                 <option value="1">360p</option>
@@ -91,6 +88,6 @@
             <button id="save_btn" onclick="saveSettings()">Save Settings</button>
         </div>
     </div>
-    <script src="test.js"></script>
+    <script src="/settings/settings.js"></script>
 </body>
 </html>
