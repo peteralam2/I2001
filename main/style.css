@@ -1019,6 +1019,11 @@
     font-size: 20px;
   }
 
+  .music-player-section.active .current-artist-name{
+    font-size: 20px;
+    display: block;
+  }
+
   .music-player-section.active .controls{
     width: 100%;
     font-size: 40px;
