@@ -3,78 +3,78 @@ let songs = [
         name: 'Bohemian Rhapsody',
         path: 'music/bohemian_rhapsody.mp3',
         artist: 'Queen',
-        cover: '/img/queen.jpg'
+        cover: 'img/queen.jpg'
     },
     {
         name: 'Paranoid android',
-        path: '/music/paranoid_android.mp3',
+        path: 'music/paranoid_android.mp3',
         artist: 'Radohead',
-        cover: '/img/radiohead.jpg'
+        cover: 'img/radiohead.jpg'
     },
     {
         name: 'for your eyes only',
-        path: '/music/4_ur_eyes_only.mp3',
+        path: 'music/4_ur_eyes_only.mp3',
         artist: 'J. Cole',
-        cover: '/img/j.cole.jpg'
+        cover: 'img/j.cole.jpg'
     },
     {
         name: 'Drive slow',
-        path: '/music/drive_slow.mp3',
+        path: 'music/drive_slow.mp3',
         artist: 'Kanye West',
-        cover: '/img/kanyewest.jpg'
+        cover: 'img/kanyewest.jpg'
     },
     {
         name: 'Bala Wala Chi',
-        path: '/music/bala_wala_chi.mp3',
+        path: 'music/bala_wala_chi.mp3',
         artist: 'Ziad Rahbani',
-        cover: '/img/Ziad_rahbani.jpg'
+        cover: 'img/Ziad_rahbani.jpg'
     },
     {
         name: 'Ya Ana Ya Ana',
-        path: '/music/ya_ana_ya_ana.mp3',
+        path: 'music/ya_ana_ya_ana.mp3',
         artist: 'Fayrouz',
-        cover: '/img/fayrouz.png'
+        cover: 'img/fayrouz.png'
     },
     
     {
         name: 'A little while',
-        path: '/music/a_little_while.mp3',
+        path: 'music/a_little_while.mp3',
         artist: 'Yellow Days',
-        cover: '/img/yellow_days.jpeg'
+        cover: 'img/yellow_days.jpeg'
     },
     
     {
         name: 'Lovers Rock',
-        path: '/music/lovers_rock.mp3',
+        path: 'music/lovers_rock.mp3',
         artist: 'TV girl',
-        cover: '/img/tvgirl.jpeg'
+        cover: 'img/tvgirl.jpeg'
     },
     
     
     {
         name:'Innerbloom',
-        path:'/music/Innerbloom.mp3',
+        path:'music/Innerbloom.mp3',
         artist:'RÜFÜS DU SOL',
-        cover:'/img/innerbloom.jpg',
+        cover:'img/innerbloom.jpg',
     },
     {
         name:'On My Knees',
-        path:'/music/on_my_knees.mp3',
+        path:'music/on_my_knees.mp3',
         artist:'RÜFÜS DU SOL',
-        cover:'/img/innerbloom.jpg',
+        cover:'img/innerbloom.jpg',
     },
 
     {
         name:'Beat It',
-        path:'/music/beat_it.mp3',
+        path:'music/beat_it.mp3',
         artist:'Michael Jackson',
-        cover:'/img/michael_jackson.jpeg',
+        cover:'img/michael_jackson.jpeg',
     },
     {
         name:'Girls Like You',
-        path:'/music/girls_like_you.mp3',
+        path:'music/girls_like_you.mp3',
         artist:'Maroon 5 ft. Cardi B',
-        cover:'/img/maroon5.jpg',
+        cover:'img/maroon5.jpg',
     },
 ]
 
