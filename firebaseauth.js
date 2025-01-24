@@ -85,7 +85,7 @@
         showMessage('login is successful', 'signInMessage');
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-        window.location.href='/main.html';
+        window.location.href='https://peteralam2.github.io/I2001/main.html';
     })
     .catch((error)=>{
         const errorCode=error.code;
