@@ -224,16 +224,16 @@
             background-image: url('img/hip-hop.jpg');
           }
           .genre[for="c3"] {
-            background-image: url('/img/arabic.jpg');
+            background-image: url('img/arabic.jpg');
           }
           .genre[for="c4"] {
-            background-image: url('/img/indie.jpg');
+            background-image: url('img/indie.jpg');
           }
           .genre[for="c5"] {
-            background-image: url('/img/electronic.jpg');
+            background-image: url('img/electronic.jpg');
           }
           .genre[for="c6"] {
-            background-image: url('/img/pop.jpg');
+            background-image: url('img/pop.jpg');
           }
 
 
@@ -389,22 +389,22 @@
         }
         
         .artist[for="d1"] {
-          background-image: url('/img/kendrick_lamar.jpg');
+          background-image: url('img/kendrick_lamar.jpg');
         }
         .artist[for="d2"] {
-          background-image: url('/img/queen.jpg');
+          background-image: url('img/queen.jpg');
         }
         .artist[for="d3"] {
-          background-image: url('/img/radiohead.jpg');
+          background-image: url('img/radiohead.jpg');
         }
         .artist[for="d4"] {
-          background-image: url('/img/kid_cudi.jpg');
+          background-image: url('img/kid_cudi.jpg');
         }
         .artist[for="d5"] {
-          background-image: url('/img/Ziad_rahbani.jpg');
+          background-image: url('img/Ziad_rahbani.jpg');
         }
         .artist[for="d6"] {
-          background-image: url('/img/eminem.jpg');
+          background-image: url('img/eminem.jpg');
         }
 
 
