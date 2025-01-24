@@ -218,10 +218,10 @@
           
           
           .genre[for="c1"] {
-            background-image: url('/img/rock.jpg');
+            background-image: url('img/rock.jpg');
           }
           .genre[for="c2"] {
-            background-image: url('/img/hip-hop.jpg');
+            background-image: url('img/hip-hop.jpg');
           }
           .genre[for="c3"] {
             background-image: url('/img/arabic.jpg');
