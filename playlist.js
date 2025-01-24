@@ -1,7 +1,7 @@
 let songs = [
     {
         name: 'Bohemian Rhapsody',
-        path: '/music/bohemian_rhapsody.mp3',
+        path: 'music/bohemian_rhapsody.mp3',
         artist: 'Queen',
         cover: '/img/queen.jpg'
     },
